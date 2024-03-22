@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240322102658">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <link rel="preconnect" href="https://fonts.macpaw.com" crossorigin> -->
+	<link rel="stylesheet" href="https://fonts.macpaw.com/css?family=FixelText:400;500;700&_v=20240322102658">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+
+			<div class="header__container">
+				<div class="header__wrapper">
+					<div class="header__top">
+						<a href="" class="header__logo">
+							<img src="img/icons/logo-dark.svg" alt="Image">
+						</a>
+
+						<div class="header__body body-header">
+							<!-- <div class="body-header__total total-trip">
+						<div class="total-trip__body">
+							<div class="total-trip__resort">La Clusaz, France</div>
+							<div class="total-trip__info">23 Mar - 30 Mar, 1 adult</div>
+						</div>
+						
+					</div> -->
+							<div class="body-header__content">
+								<div class="body-header__block leaving">
+									<!-- <div class="leaving__text block-text">Leaving from</div> -->
+									<div class="leaving__field field">
+										<label class="field__label">Leaving from</label>
+
+										<ul class="leaving__list">
+											<li class="leaving__item item-trip">
+												<div class="item-trip__text">Bristol (BRS)</div>
+												<button class="item-trip__button"></button>
+
+											</li>
+											<li class="leaving__item item-trip">
+												<div class="item-trip__text">+3</div>
+											</li>
+										</ul>
+										<button class="leaving__button add-button"></button>
+									</div>
+								</div>
+								<div class="body-header__block resort">
+									<!-- <div class="resort__text block-text">Choose resort(s)</div> -->
+									<div class="resort__field field">
+										<label class="field__label">Add resort</label>
+										<ul class="resort__list">
+
+											<li class="resort__item item-trip">
+												<div class="item-trip__text">Le Val Thorens, a ...</div>
+												<button class="item-trip__button"></button>
+
+											</li>
+											<li class="resort__item item-trip">
+												<div class="item-trip__text">+3</div>
+											</li>
+										</ul>
+										<button class="resort__button add-button"></button>
+
+									</div>
+								</div>
+								<div class="body-header__wpapper">
+									<div class="body-header__block dates">
+										<!-- <div class="dates__text block-text">Dates</div> -->
+										<div class="dates__field field">
+											<label class="field__label">Add date</label>
+											<div class="dates__date">Mar 23 - Mar 30</div>
+											<button class="dates__button add-button"></button>
+
+										</div>
+									</div>
+									<div class="body-header__block guests">
+										<!-- <div class="guests__text block-text">Guests</div> -->
+
+										<div class="guests__field field">
+											<label class="field__label">Add guests</label>
+											<ul class="guests__list">
+												<li class="guests__item item-guests">
+													<div class="item-guests__text">3 adult, 1 children</div>
+												</li>
+											</ul>
+											<button class="guests__button add-button"></button>
+											<div class="guests__popup popup-guests">
+												<div class="popup-guests__people">
+													<div class="popup-guests__item item-popup-guests adults">
+														<div class="item-popup-guests__text">Adults</div>
+														<div class="item-popup-guests__number">
+															<button class="item-popup-guests__button minus"></button>
+															<div class="item-popup-guests__value">0</div>
+															<button class="item-popup-guests__button plus"></button>
+														</div>
+													</div>
+													<div class="popup-guests__item item-popup-guests children">
+														<div class="item-popup-guests__text">Children</div>
+														<div class="item-popup-guests__number">
+															<button class="item-popup-guests__button minus"></button>
+															<div class="item-popup-guests__value">0</div>
+															<button class="item-popup-guests__button plus"></button>
+														</div>
+													</div>
+												</div>
+												<div class="popup-guests__children-age age-children">
+													<div class="age-children__text">Age of children</div>
+													<div class="age-children__items">
+														<div class="age-children__item item-children-age">
+															<div class="item-children-age__years">
+																<p>1 year</p>
+															</div>
+															<!-- <button class="item-children-age__more"></button> -->
+														</div>
+														<div class="age-children__item item-children-age">
+															<div class="item-children-age__years">
+																<p>12 years</p>
+															</div>
+															<!-- <button class="item-children-age__more"></button> -->
+														</div>
+														<div class="age-children__item item-children-age">
+															<div class="item-children-age__years">
+																<p>4 years</p>
+															</div>
+															<!-- <button class="item-children-age__more"></button> -->
+														</div>
+													</div>
+												</div>
+												<button class="popup-guests__save button button--main button--fw"><span>Save changes</span></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="body-header__block included">
+									<!-- <div class="included__text block-text">What's included?</div> -->
+									<div class="included__items">
+										<p>
+											Flights + Transfe..
+										</p>
+									</div>
+								</div>
+							</div>
+							<button class="body-header__find button button--find button--main button--fw"><span>Find a trip</span></button>
+						</div>
+
+						<div class="header__menu menu">
+							<div class="menu__icon-wrapper">
+								<button type="button" class="menu__icon icon-menu"><span></span></button>
+							</div>
+							<nav class="menu__body">
+								<a href="" class="menu__logo">
+									<img src="img/icons/logo-dark.svg" alt="Image">
+								</a>
+								<ul class="menu__list">
+									<li class="menu__item menu__sub-menu">
+										<div class="menu__link">Home</div>
+										<ul class="menu__sub-list">
+											<li><a class="menu__sub-link" href="">Home</a></li>
+											<li><a class="menu__sub-link" href="">HomeHomeHome</a></li>
+											<li><a class="menu__sub-link" href="">Home</a></li>
+										</ul>
+									</li>
+									<li class="menu__item menu__sub-menu">
+										<div class="menu__link">Categories</div>
+
+										<ul class="menu__sub-list">
+											<li><a class="menu__sub-link" href="">1</a></li>
+											<li><a class="menu__sub-link" href="">2</a></li>
+											<li><a class="menu__sub-link" href="">3</a></li>
+										</ul>
+									</li>
+									<li class="menu__item menu__sub-menu">
+										<div class="menu__link">Destinations</div>
+
+										<ul class="menu__sub-list">
+											<li><a class="menu__sub-link" href="">1</a></li>
+											<li><a class="menu__sub-link" href="">2</a></li>
+											<li><a class="menu__sub-link" href="">3</a></li>
+										</ul>
+									</li>
+									<li class="menu__item menu__sub-menu">
+										<div class="menu__link">Blog</div>
+
+										<ul class="menu__sub-list">
+											<li><a class="menu__sub-link" href="">1</a></li>
+											<li><a class="menu__sub-link" href="">2</a></li>
+											<li><a class="menu__sub-link" href="">3</a></li>
+										</ul>
+									</li>
+									<li class="menu__item menu__sub-menu">
+										<div class="menu__link">Pages</div>
+
+										<ul class="menu__sub-list">
+											<li><a class="menu__sub-link" href="">1</a></li>
+											<li><a class="menu__sub-link" href="">2</a></li>
+											<li><a class="menu__sub-link" href="">3</a></li>
+										</ul>
+									</li>
+									<li class="menu__item menu__sub-menu">
+										<div class="menu__link">Dashboard</div>
+
+										<ul class="menu__sub-list">
+											<li><a class="menu__sub-link" href="">1</a></li>
+											<li><a class="menu__sub-link" href="">2</a></li>
+											<li><a class="menu__sub-link" href="">3</a></li>
+										</ul>
+									</li>
+									<li class="menu__item"><a href="" class="menu__link">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header__footer">
+						<div class="header-footer__body body-header">
+							<div class="body-header__total total-trip">
+								<div class="total-trip__body">
+									<div class="total-trip__resort">La Clusaz, France</div>
+									<div class="total-trip__info">23 Mar - 30 Mar, 1 adult</div>
+								</div>
+
+							</div>
+							<div class="body-header__content">
+								<div class="body-header__block leaving">
+									<!-- <div class="leaving__text block-text">Leaving from</div> -->
+									<div class="leaving__field field">
+										<label class="field__label">Leaving from</label>
+
+										<ul class="leaving__list">
+											<li class="leaving__item item-trip">
+												<div class="item-trip__text">Bristol (BRS)</div>
+												<button class="item-trip__button"></button>
+
+											</li>
+											<li class="leaving__item item-trip">
+												<div class="item-trip__text">+3</div>
+											</li>
+										</ul>
+										<button class="leaving__button add-button"></button>
+									</div>
+								</div>
+								<div class="body-header__block resort">
+									<!-- <div class="resort__text block-text">Choose resort(s)</div> -->
+									<div class="resort__field field">
+										<label class="field__label">Add resort</label>
+										<ul class="resort__list">
+
+											<li class="resort__item item-trip">
+												<div class="item-trip__text">Le Val Thorens, a ...</div>
+												<button class="item-trip__button"></button>
+
+											</li>
+											<li class="resort__item item-trip">
+												<div class="item-trip__text">+3</div>
+											</li>
+										</ul>
+										<button class="resort__button add-button"></button>
+
+									</div>
+								</div>
+								<div class="body-header__wpapper">
+									<div class="body-header__block dates">
+										<!-- <div class="dates__text block-text">Dates</div> -->
+										<div class="dates__field field">
+											<label class="field__label">Add date</label>
+											<div class="dates__date">Mar 23 - Mar 30</div>
+											<button class="dates__button add-button"></button>
+
+										</div>
+									</div>
+									<div class="body-header__block guests">
+										<!-- <div class="guests__text block-text">Guests</div> -->
+
+										<div class="guests__field field">
+											<label class="field__label">Add guests</label>
+											<ul class="guests__list">
+												<li class="guests__item item-guests">
+													<div class="item-guests__text">3 adult, 1 children</div>
+												</li>
+											</ul>
+											<button class="guests__button add-button"></button>
+											<div class="guests__popup popup-guests">
+												<div class="popup-guests__people">
+													<div class="popup-guests__item item-popup-guests adults">
+														<div class="item-popup-guests__text">Adults</div>
+														<div class="item-popup-guests__number">
+															<button class="item-popup-guests__button minus"></button>
+															<div class="item-popup-guests__value">0</div>
+															<button class="item-popup-guests__button plus"></button>
+														</div>
+													</div>
+													<div class="popup-guests__item item-popup-guests children">
+														<div class="item-popup-guests__text">Children</div>
+														<div class="item-popup-guests__number">
+															<button class="item-popup-guests__button minus"></button>
+															<div class="item-popup-guests__value">0</div>
+															<button class="item-popup-guests__button plus"></button>
+														</div>
+													</div>
+												</div>
+												<div class="popup-guests__children-age age-children">
+													<div class="age-children__text">Age of children</div>
+													<div class="age-children__items">
+														<div class="age-children__item item-children-age">
+															<div class="item-children-age__years">
+																<p>1 year</p>
+															</div>
+															<!-- <button class="item-children-age__more"></button> -->
+														</div>
+														<div class="age-children__item item-children-age">
+															<div class="item-children-age__years">
+																<p>12 years</p>
+															</div>
+															<!-- <button class="item-children-age__more"></button> -->
+														</div>
+														<div class="age-children__item item-children-age">
+															<div class="item-children-age__years">
+																<p>4 years</p>
+															</div>
+															<!-- <button class="item-children-age__more"></button> -->
+														</div>
+													</div>
+												</div>
+												<button class="popup-guests__save button button--main button--fw"><span>Save changes</span></button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="body-header__block included">
+									<!-- <div class="included__text block-text">What's included?</div> -->
+									<div class="included__items">
+										<p>
+											Flights + Transfe..
+										</p>
+									</div>
+								</div>
+							</div>
+							<button class="body-header__find button button--find button--main button--fw"><span>Find a trip</span></button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</header>
+
+		<main class="page page-hotel">
+			<div class="page__navigation">
+				<div class="page__container">
+					<nav class="page__breadcrumbs breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item breadcrumbs-stay">
+								<div class="breadcrumbs__text">Stay</div>
+							</li>
+							<li class="breadcrumbs__item breadcrumbs-flight breadcrumbs__item--inactive">
+								<div class="breadcrumbs__text">Stay</div>
+
+							</li>
+							<li class="breadcrumbs__item breadcrumbs-transfer breadcrumbs__item--inactive">
+								<div class="breadcrumbs__text">Stay</div>
+
+							</li>
+							<li class="breadcrumbs__item breadcrumbs-pass breadcrumbs__item--inactive">
+								<div class="breadcrumbs__text">Stay</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240322102658"></script>
+</body>
+
+</html>
