@@ -1805,11 +1805,12 @@
                     max: [ 1e4 ]
                 }
             });
+            var skipValues = [ document.getElementById("price-start"), document.getElementById("price-end") ];
+            priceSlider.noUiSlider.on("update", (function(values, handle) {
+                let formattedValue = "$" + Number(values[handle]).toFixed(0);
+                skipValues[handle].innerHTML = formattedValue;
+            }));
         }
-        var rangeValue = document.getElementById("range-value");
-        priceSlider.noUiSlider.on("update", (function(values) {
-            rangeValue.innerHTML = "$" + values[0] + " - $" + values[1];
-        }));
     }
     rangeInit();
     function ssr_window_esm_isObject(obj) {

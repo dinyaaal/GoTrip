@@ -11,31 +11,15 @@
 @font-face {
   font-family: FixelText;
   font-display: swap;
-  src: url("../fonts/FixelText-Medium.woff2") format("woff2"), url("../fonts/FixelText-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: FixelText;
-  font-display: swap;
-  src: url("../fonts/FixelText-Regular.woff2") format("woff2"), url("../fonts/FixelText-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: FixelText;
-  font-display: swap;
   src: url("../fonts/FixelText-Bold.woff2") format("woff2"), url("../fonts/FixelText-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: icomoon;
+  font-family: FixelText;
   font-display: swap;
-  src: url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff");
+  src: url("../fonts/FixelText-Regular.woff2") format("woff2"), url("../fonts/FixelText-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -49,9 +33,17 @@
 }
 
 @font-face {
-  font-family: icomoon;
+  font-family: FixelText;
   font-display: swap;
-  src: url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff");
+  src: url("../fonts/FixelText-Medium.woff2") format("woff2"), url("../fonts/FixelText-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: icons;
+  font-display: swap;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -60,6 +52,14 @@
   font-family: FixelText;
   font-display: swap;
   src: url("../fonts/FixelText-Regular.woff2") format("woff2"), url("../fonts/FixelText-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: icons;
+  font-display: swap;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -79,19 +79,23 @@
   display: block;
 }
 
-.icon-flights:before {
+._icon-ski:before {
+  content: "\e904";
+}
+
+._icon-flights:before {
   content: "\e900";
 }
 
-.icon-pass:before {
+._icon-pass:before {
   content: "\e901";
 }
 
-.icon-stay:before {
+._icon-stay:before {
   content: "\e902";
 }
 
-.icon-transfer:before {
+._icon-transfer:before {
   content: "\e903";
 }
 
@@ -747,6 +751,29 @@ body {
 .title--big {
   color: #fff;
   font-weight: 700;
+}
+
+.rating-accommodation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 0.625rem;
+}
+
+.rating-accommodation__body {
+  line-height: 140%;
+  text-align: end;
+  font-size: 0.875rem;
+}
+
+.rating-accommodation__reviews {
+  color: #818389;
 }
 
 .main-header {
@@ -1902,6 +1929,16 @@ body {
   background: url("../img/icons/sort.svg") center no-repeat;
 }
 
+.range__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3125rem;
+}
+
 .range__value:not(:last-child) {
   margin-bottom: 0.625rem;
 }
@@ -2209,6 +2246,10 @@ body {
   gap: 0.625rem;
 }
 
+.content-item-accommodation__rating {
+  display: none;
+}
+
 .content-item-accommodation__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2221,30 +2262,6 @@ body {
 
 .content-item-accommodation__button {
   max-width: 9.625rem;
-}
-
-.rating-accommodation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  gap: 0.625rem;
-  display: none;
-}
-
-.rating-accommodation__body {
-  line-height: 140%;
-  text-align: end;
-  font-size: 0.875rem;
-}
-
-.rating-accommodation__reviews {
-  color: #818389;
 }
 
 .value-rating {
@@ -2358,6 +2375,10 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(230, 228, 239, 0.395);
+}
+
+.breadcrumbs__item--active {
+  color: #097327;
 }
 
 .breadcrumbs__text {
@@ -2485,17 +2506,17 @@ body {
     border-left: 2px solid #F4F3F9;
   }
 
+  .content-item-accommodation__rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .content-item-accommodation__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-
-  .rating-accommodation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 
   .price-accommodation {
