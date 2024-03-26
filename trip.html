@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240325174928">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240326154551">
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -24,7 +24,7 @@
 							<img src="img/icons/logo-dark.svg" alt="Image">
 						</a>
 
-						<div class="header__body body-header">
+						<div data-da=".header__footer,1280" class="header__body body-header">
 
 							<div class="body-header__content">
 								<div class="body-header__block leaving">
@@ -43,7 +43,7 @@
 											</li>
 										</ul>
 										<button class="leaving__button add-button"></button>
-										<div class="leaving__popup popup-leaving popup">
+										<div class="leaving__popup popup-leaving popup-desktop">
 											<div class="popup-leaving__field">
 												<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="Type here or select from list" class="popup-leaving__input input">
 											</div>
@@ -103,7 +103,7 @@
 											</li>
 										</ul>
 										<button class="resort__button add-button"></button>
-										<div class="resort__popup popup-resort popup">
+										<div class="resort__popup popup-resort popup-desktop">
 											<div class="popup-resort__field">
 												<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="Type here or select from list" class="popup-resort__input input">
 											</div>
@@ -199,7 +199,7 @@
 												</li>
 											</ul>
 											<button class="guests__button add-button"></button>
-											<div class="guests__popup popup-guests popup">
+											<div class="guests__popup popup-guests popup-desktop">
 												<div class="popup-guests__people">
 													<div class="popup-guests__item item-popup-guests adults">
 														<div class="item-popup-guests__text">Adults</div>
@@ -330,245 +330,237 @@
 						</div>
 					</div>
 					<div class="header__footer">
-						<div class="header-footer__body body-header">
-							<div class="body-header__total total-trip">
-								<div class="total-trip__body">
-									<div class="total-trip__resort">La Clusaz, France</div>
-									<div class="total-trip__info">23 Mar - 30 Mar, 1 adult</div>
-								</div>
-
+						<div data-popup="#popup-mobile-resort" class="body-header__total total-trip">
+							<div class="total-trip__body">
+								<div class="total-trip__resort">La Clusaz, France</div>
+								<div class="total-trip__info">23 Mar - 30 Mar, 1 adult</div>
 							</div>
-							<div class="body-header__content">
-								<div class="body-header__block leaving">
-									<!-- <div class="leaving__text block-text">Leaving from</div> -->
-									<div class="leaving__field field">
-										<label class="field__label">Leaving from</label>
-
-										<ul class="leaving__list">
-											<li class="leaving__item item-trip">
-												<div class="item-trip__text">Bristol (BRS)</div>
-												<button class="item-trip__button"></button>
-
-											</li>
-											<li class="leaving__item item-trip">
-												<div class="item-trip__text">+3</div>
-											</li>
-										</ul>
-										<button class="leaving__button add-button"></button>
-										<div class="leaving__popup popup-leaving popup">
-											<div class="popup-leaving__field">
-												<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="Type here or select from list" class="popup-leaving__input input">
-											</div>
-
-											<div class="popup-leaving__body">
-												<div class="popup-leaving__items">
-													<div class="popup-leaving__item item-popup-leaving">
-														<div class="item-popup-leaving__country">
-															<div class="item-popup-leaving__flag">
-																<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
-															</div>
-															<p class="item-popup-leaving__name">France</p>
-														</div>
-														<ul class="item-popup-leaving__list">
-															<li>Bristol (BRS)</li>
-															<li>Bristol (BRS)</li>
-															<li>Bristol (BRS)</li>
-															<li>Bristol (BRS)</li>
-															<li>Bristol (BRS)</li>
-
-														</ul>
-													</div>
-													<div class="popup-leaving__item item-popup-leaving">
-														<div class="item-popup-leaving__country">
-															<div class="item-popup-leaving__flag">
-																<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
-															</div>
-															<p class="item-popup-leaving__name">France</p>
-														</div>
-														<ul class="item-popup-leaving__list">
-															<li>Bristol (BRS)</li>
-															<li>Bristol (BRS)</li>
-															<li>Bristol (BRS)</li>
-															<li>Bristol (BRS)</li>
-															<li>Bristol (BRS)</li>
-
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="body-header__block resort">
-									<!-- <div class="resort__text block-text">Choose resort(s)</div> -->
-									<div class="resort__field field">
-										<label class="field__label">Add resort</label>
-										<ul class="resort__list">
-
-											<li class="resort__item item-trip">
-												<div class="item-trip__text">Le Val Thorens, a ...</div>
-												<button class="item-trip__button"></button>
-
-											</li>
-											<li class="resort__item item-trip">
-												<div class="item-trip__text">+3</div>
-											</li>
-										</ul>
-										<button class="resort__button add-button"></button>
-										<div class="resort__popup popup-resort popup">
-											<div class="popup-resort__field">
-												<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="Type here or select from list" class="popup-resort__input input">
-											</div>
-
-											<div class="popup-resort__body">
-												<div class="popup-resort__items">
-													<div class="popup-resort__item item-popup-resort">
-														<div class="item-popup-resort__country">
-															<div class="item-popup-resort__flag">
-																<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
-															</div>
-															<p class="item-popup-resort__name">France</p>
-														</div>
-														<ul class="item-popup-resort__list">
-															<li>La Plagne</li>
-															<li>La Plagne</li>
-															<li>La Plagne</li>
-															<li>La Plagne</li>
-															<li>La Plagne</li>
-
-														</ul>
-													</div>
-													<div class="popup-resort__item item-popup-resort">
-														<div class="item-popup-resort__country">
-															<div class="item-popup-resort__flag">
-																<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
-															</div>
-															<p class="item-popup-resort__name">France</p>
-														</div>
-														<ul class="item-popup-resort__list">
-															<li>La Plagne</li>
-															<li>La Plagne</li>
-															<li>La Plagne</li>
-															<li>La Plagne</li>
-															<li>La Plagne</li>
-
-														</ul>
-													</div>
-													<div class="popup-resort__item item-popup-resort">
-														<div class="item-popup-resort__country">
-															<div class="item-popup-resort__flag">
-																<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
-															</div>
-															<p class="item-popup-resort__name">France</p>
-														</div>
-														<ul class="item-popup-resort__list">
-															<li>La Plagne</li>
-															<li>La Plagne</li>
-															<li>La Plagne</li>
-															<li>La Plagne</li>
-															<li>La Plagne</li>
-
-														</ul>
-													</div>
-													<div class="popup-resort__item item-popup-resort">
-														<div class="item-popup-resort__country">
-															<div class="item-popup-resort__flag">
-																<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
-															</div>
-															<p class="item-popup-resort__name">France</p>
-														</div>
-														<ul class="item-popup-resort__list">
-															<li>La Plagne</li>
-															<li>La Plagne</li>
-															<li>La Plagne</li>
-															<li>La Plagne</li>
-															<li>La Plagne</li>
-
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="body-header__wpapper">
-									<div class="body-header__block dates">
-										<!-- <div class="dates__text block-text">Dates</div> -->
-										<div id="date-opener" class="dates__field field">
-											<input placeholder="Add date" id="date" type="text" name="" readonly class="dates__input">
-
-											<button class="dates__button add-button"></button>
-										</div>
-									</div>
-									<div class="body-header__block guests">
-										<!-- <div class="guests__text block-text">Guests</div> -->
-
-										<div class="guests__field field">
-											<label class="field__label">Add guests</label>
-											<ul class="guests__list">
-												<li class="guests__item item-guests">
-													<div class="item-guests__text">3 adult, 1 children</div>
-												</li>
-											</ul>
-											<button class="guests__button add-button"></button>
-											<div class="guests__popup popup-guests popup">
-												<div class="popup-guests__people">
-													<div class="popup-guests__item item-popup-guests adults">
-														<div class="item-popup-guests__text">Adults</div>
-														<div class="item-popup-guests__number">
-															<button class="item-popup-guests__button minus"></button>
-															<div class="item-popup-guests__value">0</div>
-															<button class="item-popup-guests__button plus"></button>
-														</div>
-													</div>
-													<div class="popup-guests__item item-popup-guests children">
-														<div class="item-popup-guests__text">Children</div>
-														<div class="item-popup-guests__number">
-															<button class="item-popup-guests__button minus"></button>
-															<div class="item-popup-guests__value">0</div>
-															<button class="item-popup-guests__button plus"></button>
-														</div>
-													</div>
-												</div>
-												<div class="popup-guests__children-age age-children">
-													<div class="age-children__text">Age of children</div>
-													<div class="age-children__items">
-														<div class="age-children__item item-children-age">
-															<div class="item-children-age__years">
-																<p>1 year</p>
-															</div>
-															<!-- <button class="item-children-age__more"></button> -->
-														</div>
-														<div class="age-children__item item-children-age">
-															<div class="item-children-age__years">
-																<p>12 years</p>
-															</div>
-															<!-- <button class="item-children-age__more"></button> -->
-														</div>
-														<div class="age-children__item item-children-age">
-															<div class="item-children-age__years">
-																<p>4 years</p>
-															</div>
-															<!-- <button class="item-children-age__more"></button> -->
-														</div>
-													</div>
-												</div>
-												<button class="popup-guests__save button button--main button--fw"><span>Save changes</span></button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="body-header__block included">
-									<!-- <div class="included__text block-text">What's included?</div> -->
-									<div class="included__items">
-										<p>
-											Flights + Transfe..
-										</p>
-									</div>
-								</div>
-							</div>
-							<button class="body-header__find button button--find button--main button--fw"><span>Find a trip</span></button>
 						</div>
+						<!-- <div class="header-footer__body body-header">
+					
+					<div class="body-header__content">		
+						<div class="body-header__block leaving">
+							<div class="leaving__field field">
+								<label class="field__label">Leaving from</label>
+		
+								<ul class="leaving__list">
+									<li class="leaving__item item-trip">
+										<div class="item-trip__text">Bristol (BRS)</div>
+										<button class="item-trip__button"></button>
+		
+									</li>
+									<li class="leaving__item item-trip">
+										<div class="item-trip__text">+3</div>
+									</li>
+								</ul>
+								<button class="leaving__button add-button"></button>
+								<div class="leaving__popup popup-leaving popup">
+									<div class="popup-leaving__field">
+										<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="Type here or select from list" class="popup-leaving__input input">
+									</div>
+
+									<div class="popup-leaving__body">
+										<div class="popup-leaving__items">
+											<div class="popup-leaving__item item-popup-leaving">
+												<div class="item-popup-leaving__country">
+													<div class="item-popup-leaving__flag">
+														<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
+													</div>
+													<p class="item-popup-leaving__name">France</p>
+												</div>
+												<ul class="item-popup-leaving__list">
+													<li>Bristol (BRS)</li>
+													<li>Bristol (BRS)</li>
+													<li>Bristol (BRS)</li>
+													<li>Bristol (BRS)</li>
+													<li>Bristol (BRS)</li>
+													
+												</ul>
+											</div>
+											<div class="popup-leaving__item item-popup-leaving">
+												<div class="item-popup-leaving__country">
+													<div class="item-popup-leaving__flag">
+														<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
+													</div>
+													<p class="item-popup-leaving__name">France</p>
+												</div>
+												<ul class="item-popup-leaving__list">
+													<li>Bristol (BRS)</li>
+													<li>Bristol (BRS)</li>
+													<li>Bristol (BRS)</li>
+													<li>Bristol (BRS)</li>
+													<li>Bristol (BRS)</li>
+													
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="body-header__block resort">
+							<div class="resort__field field">
+								<label class="field__label">Add resort</label>
+								<ul class="resort__list">
+		
+									<li class="resort__item item-trip">
+										<div class="item-trip__text">Le Val Thorens, a ...</div>
+										<button class="item-trip__button"></button>
+		
+									</li>
+									<li class="resort__item item-trip">
+										<div class="item-trip__text">+3</div>
+									</li>
+								</ul>
+								<button class="resort__button add-button"></button>
+								<div class="resort__popup popup-resort popup">
+									<div class="popup-resort__field">
+										<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="Type here or select from list" class="popup-resort__input input">
+									</div>
+
+									<div class="popup-resort__body">
+										<div class="popup-resort__items">
+											<div class="popup-resort__item item-popup-resort">
+												<div class="item-popup-resort__country">
+													<div class="item-popup-resort__flag">
+														<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
+													</div>
+													<p class="item-popup-resort__name">France</p>
+												</div>
+												<ul class="item-popup-resort__list">
+													<li>La Plagne</li>
+													<li>La Plagne</li>
+													<li>La Plagne</li>
+													<li>La Plagne</li>
+													<li>La Plagne</li>
+													
+												</ul>
+											</div>
+											<div class="popup-resort__item item-popup-resort">
+												<div class="item-popup-resort__country">
+													<div class="item-popup-resort__flag">
+														<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
+													</div>
+													<p class="item-popup-resort__name">France</p>
+												</div>
+												<ul class="item-popup-resort__list">
+													<li>La Plagne</li>
+													<li>La Plagne</li>
+													<li>La Plagne</li>
+													<li>La Plagne</li>
+													<li>La Plagne</li>
+													
+												</ul>
+											</div>
+											<div class="popup-resort__item item-popup-resort">
+												<div class="item-popup-resort__country">
+													<div class="item-popup-resort__flag">
+														<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
+													</div>
+													<p class="item-popup-resort__name">France</p>
+												</div>
+												<ul class="item-popup-resort__list">
+													<li>La Plagne</li>
+													<li>La Plagne</li>
+													<li>La Plagne</li>
+													<li>La Plagne</li>
+													<li>La Plagne</li>
+													
+												</ul>
+											</div>
+											<div class="popup-resort__item item-popup-resort">
+												<div class="item-popup-resort__country">
+													<div class="item-popup-resort__flag">
+														<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
+													</div>
+													<p class="item-popup-resort__name">France</p>
+												</div>
+												<ul class="item-popup-resort__list">
+													<li>La Plagne</li>
+													<li>La Plagne</li>
+													<li>La Plagne</li>
+													<li>La Plagne</li>
+													<li>La Plagne</li>
+													
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="body-header__wpapper">
+							<div class="body-header__block dates">
+								<div id="date-opener" class="dates__field field">
+									<input placeholder="Add date" id="date" type="text" name="" readonly class="dates__input">
+
+									<button class="dates__button add-button"></button>
+								</div>
+							</div>
+							<div class="body-header__block guests">
+		
+								<div class="guests__field field">
+									<label class="field__label">Add guests</label>
+									<ul class="guests__list">
+										<li class="guests__item item-guests">
+											<div class="item-guests__text">3 adult, 1 children</div>
+										</li>
+									</ul>
+									<button class="guests__button add-button"></button>
+									<div class="guests__popup popup-guests popup">
+										<div class="popup-guests__people">
+											<div class="popup-guests__item item-popup-guests adults">
+												<div class="item-popup-guests__text">Adults</div>
+												<div class="item-popup-guests__number">
+													<button class="item-popup-guests__button minus"></button>
+													<div class="item-popup-guests__value">0</div>
+													<button class="item-popup-guests__button plus"></button>
+												</div>
+											</div>
+											<div class="popup-guests__item item-popup-guests children">
+												<div class="item-popup-guests__text">Children</div>
+												<div class="item-popup-guests__number">
+													<button class="item-popup-guests__button minus"></button>
+													<div class="item-popup-guests__value">0</div>
+													<button class="item-popup-guests__button plus"></button>
+												</div>
+											</div>
+										</div>
+										<div class="popup-guests__children-age age-children">
+											<div class="age-children__text">Age of children</div>
+											<div class="age-children__items">
+												<div class="age-children__item item-children-age">
+													<div class="item-children-age__years">
+														<p>1 year</p>
+													</div>
+												</div>
+												<div class="age-children__item item-children-age">
+													<div class="item-children-age__years">
+														<p>12 years</p>
+													</div>
+												</div>
+												<div class="age-children__item item-children-age">
+													<div class="item-children-age__years">
+														<p>4 years</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button class="popup-guests__save button button--main button--fw"><span>Save changes</span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="body-header__block included">
+							<div class="included__items">
+								<p>
+									Flights + Transfe..
+								</p>
+							</div>
+						</div>
+					</div>
+					<button class="body-header__find button button--find button--main button--fw"><span>Find a trip</span></button>
+				</div> -->
 					</div>
 				</div>
 			</div>
@@ -1432,7 +1424,288 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240325174928"></script>
+	<div id="popup-mobile-resort" aria-hidden="true" class="popup-mobile-resort popup popup--fw">
+		<div class="popup-mobile-resort__wrapper popup__wrapper">
+			<div class="popup-mobile-resort__content popup__content">
+				<div class="popup__navigation">
+
+					<button data-close type="button" class="popup-mobile-resort__close popup__close"></button>
+				</div>
+				<div class="popup-mobile-resort__body">
+					<div class="popup-resort__field">
+						<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="Type here or select from list" class="popup-resort__input input">
+					</div>
+
+					<div class="popup-resort__body">
+						<div class="popup-resort__items">
+							<div class="popup-resort__item item-popup-resort">
+								<div class="item-popup-resort__country">
+									<div class="item-popup-resort__flag">
+										<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
+									</div>
+									<p class="item-popup-resort__name">France</p>
+								</div>
+								<ul class="item-popup-resort__list">
+									<li data-popup="#popup-mobile-leaving">La Plagne</li>
+									<li data-popup="#popup-mobile-leaving">La Plagne</li>
+									<li data-popup="#popup-mobile-leaving">La Plagne</li>
+									<li data-popup="#popup-mobile-leaving">La Plagne</li>
+									<li data-popup="#popup-mobile-leaving">La Plagne</li>
+								</ul>
+							</div>
+							<div class="popup-resort__item item-popup-resort">
+								<div class="item-popup-resort__country">
+									<div class="item-popup-resort__flag">
+										<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
+									</div>
+									<p class="item-popup-resort__name">France</p>
+								</div>
+								<ul class="item-popup-resort__list">
+									<li data-popup="#popup-mobile-leaving">La Plagne</li>
+									<li data-popup="#popup-mobile-leaving">La Plagne</li>
+									<li data-popup="#popup-mobile-leaving">La Plagne</li>
+									<li data-popup="#popup-mobile-leaving">La Plagne</li>
+									<li data-popup="#popup-mobile-leaving">La Plagne</li>
+								</ul>
+							</div>
+							<div class="popup-resort__item item-popup-resort">
+								<div class="item-popup-resort__country">
+									<div class="item-popup-resort__flag">
+										<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
+									</div>
+									<p class="item-popup-resort__name">France</p>
+								</div>
+								<ul class="item-popup-resort__list">
+									<li data-popup="#popup-mobile-leaving">La Plagne</li>
+									<li data-popup="#popup-mobile-leaving">La Plagne</li>
+									<li data-popup="#popup-mobile-leaving">La Plagne</li>
+									<li data-popup="#popup-mobile-leaving">La Plagne</li>
+									<li data-popup="#popup-mobile-leaving">La Plagne</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-mobile-leaving" aria-hidden="true" class="popup-mobile-leaving popup popup--fw">
+		<div class="popup-mobile-leaving__wrapper popup__wrapper">
+			<div class="popup-mobile-leaving__content popup__content">
+				<div class="popup__navigation">
+					<a data-popup="#popup-mobile-resort" class="popup__back">Back</a>
+					<button data-close type="button" class="popup__close"></button>
+				</div>
+				<div class="popup__progress">
+					<h3 class="popup__title">Leaving from</h3>
+					<div class="popup__num">1/4</div>
+				</div>
+				<div class="popup-mobile-leaving__body popup__body">
+					<div class="popup-leaving__field">
+						<input autocomplete="off" type="text" name="form[]" data-error="" placeholder="Type here or select from list" class="popup-leaving__input input">
+					</div>
+
+					<div class="popup-leaving__body">
+						<div class="popup-leaving__items">
+							<div class="popup-leaving__item item-popup-leaving">
+								<div class="item-popup-leaving__country">
+									<div class="item-popup-leaving__flag">
+										<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
+									</div>
+									<p class="item-popup-leaving__name">France</p>
+								</div>
+								<ul class="item-popup-leaving__list">
+									<li>Bristol (BRS)</li>
+									<li>Bristol (BRS)</li>
+									<li>Bristol (BRS)</li>
+									<li>Bristol (BRS)</li>
+									<li>Bristol (BRS)</li>
+
+								</ul>
+							</div>
+							<div class="popup-leaving__item item-popup-leaving">
+								<div class="item-popup-leaving__country">
+									<div class="item-popup-leaving__flag">
+										<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
+									</div>
+									<p class="item-popup-leaving__name">France</p>
+								</div>
+								<ul class="item-popup-leaving__list">
+									<li>Bristol (BRS)</li>
+									<li>Bristol (BRS)</li>
+									<li>Bristol (BRS)</li>
+									<li>Bristol (BRS)</li>
+									<li>Bristol (BRS)</li>
+
+								</ul>
+							</div>
+							<div class="popup-leaving__item item-popup-leaving">
+								<div class="item-popup-leaving__country">
+									<div class="item-popup-leaving__flag">
+										<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
+									</div>
+									<p class="item-popup-leaving__name">France</p>
+								</div>
+								<ul class="item-popup-leaving__list">
+									<li>Bristol (BRS)</li>
+									<li>Bristol (BRS)</li>
+									<li>Bristol (BRS)</li>
+									<li>Bristol (BRS)</li>
+									<li>Bristol (BRS)</li>
+
+								</ul>
+							</div>
+							<div class="popup-leaving__item item-popup-leaving">
+								<div class="item-popup-leaving__country">
+									<div class="item-popup-leaving__flag">
+										<picture><source srcset="img/counries/France.webp" type="image/webp"><img class="ibg" src="img/counries/France.jpg" alt="Image"></picture>
+									</div>
+									<p class="item-popup-leaving__name">France</p>
+								</div>
+								<ul class="item-popup-leaving__list">
+									<li>Bristol (BRS)</li>
+									<li>Bristol (BRS)</li>
+									<li>Bristol (BRS)</li>
+									<li>Bristol (BRS)</li>
+									<li>Bristol (BRS)</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="popup__buttons">
+					<button data-popup="#popup-mobile-guests" class="popup__next button button--main button--fw"><span>Next step</span></button>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="popup-mobile-guests" aria-hidden="true" class="popup-mobile-guests popup popup--fw">
+		<div class="popup-mobile-guests__wrapper popup__wrapper">
+			<div class="popup-mobile-guests__content popup__content">
+				<div class="popup__navigation">
+					<a data-popup="#popup-mobile-leaving" class="popup__back">Back</a>
+					<button data-close type="button" class="popup__close"></button>
+				</div>
+				<div class="popup__progress">
+					<h3 class="popup__title">Guests</h3>
+					<div class="popup__num">2/4</div>
+				</div>
+				<div class="popup-mobile-guests__body popup__body">
+
+				</div>
+				<div class="popup__buttons">
+					<button data-popup="#popup-mobile-dates" class="popup__next button button--main button--fw"><span>Next step</span></button>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="popup-mobile-dates" aria-hidden="true" class="popup-mobile-dates popup popup--fw">
+		<div class="popup-mobile-dates__wrapper popup__wrapper">
+			<div class="popup-mobile-dates__content popup__content">
+				<div class="popup__navigation">
+					<a data-popup="#popup-mobile-guests" class="popup__back">Back</a>
+					<button data-close type="button" class="popup__close"></button>
+				</div>
+				<div class="popup__progress">
+					<h3 class="popup__title">Dates</h3>
+					<div class="popup__num">3/4</div>
+				</div>
+				<div class="popup-mobile-dates__body popup__body">
+					<input placeholder="Add date" id="date-mobile" type="text" name="" readonly class="dates__input">
+
+				</div>
+				<div class="popup__buttons">
+					<button data-popup="#popup-mobile-included" class="popup__next button button--main button--fw"><span>Next step</span></button>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="popup-mobile-included" aria-hidden="true" class="popup-mobile-included popup popup--fw">
+		<div class="popup-mobile-included__wrapper popup__wrapper">
+			<div class="popup-mobile-included__content popup__content">
+				<div class="popup__navigation">
+					<a data-popup="#popup-mobile-dates" class="popup__back">Back</a>
+					<button data-close type="button" class="popup__close"></button>
+				</div>
+				<div class="popup__progress">
+					<h3 class="popup__title">What's included?</h3>
+					<div class="popup__num">4/4</div>
+				</div>
+				<div class="popup-mobile-included__body popup__body">
+					<div class="included__items">
+						<div class="included__item included-stay">
+							<label>
+								<p>
+									Stay
+								</p>
+								<input checked type="checkbox" name="stay" id="" class="real-checkbox">
+								<span class="custom-checkbox"></span>
+							</label>
+						</div>
+						<div class="included__item included-flights">
+							<label>
+								<p>
+									Flights
+								</p>
+								<input type="checkbox" name="flights" id="" class="real-checkbox">
+								<span class="custom-checkbox"></span>
+							</label>
+						</div>
+						<div class="included__item included-transfer">
+							<label>
+								<p>
+									Transfer
+								</p>
+								<input type="checkbox" name="transfer" id="" class="real-checkbox">
+								<span class="custom-checkbox"></span>
+							</label>
+						</div>
+						<div class="included__item included-pass">
+							<label>
+								<p>
+									Ski pass
+								</p>
+								<input type="checkbox" name="pass" id="" class="real-checkbox">
+								<span class="custom-checkbox"></span>
+							</label>
+						</div>
+						<div class="included__item included-equipment">
+							<label>
+								<p>
+									Ski equipment
+								</p>
+								<input type="checkbox" name="equipment" id="" class="real-checkbox">
+								<span class="custom-checkbox"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="popup__buttons">
+					<button class="body-main__find button button--find button--main button--fw"><span>Find a trip</span></button>
+
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="js/app.min.js?_v=20240326154551"></script>
 
 </body>
 
