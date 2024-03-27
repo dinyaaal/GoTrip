@@ -9261,6 +9261,16 @@ PERFORMANCE OF THIS SOFTWARE.
             }));
             updateAgeTextVisibility();
         }));
+        var AllCheckboxes = document.querySelectorAll('.item-popup-leaving__name input[type="checkbox"]');
+        AllCheckboxes.forEach((function(checkbox) {
+            checkbox.addEventListener("change", (function() {
+                var currentContainerCheckboxes = this.closest(".popup-leaving__item").querySelectorAll('.item-popup-leaving__list input[type="checkbox"]');
+                var isChecked = this.checked;
+                currentContainerCheckboxes.forEach((function(checkbox) {
+                    checkbox.checked = isChecked;
+                }));
+            }));
+        }));
         window["FLS"] = 0;
         isWebp();
         addTouchClass();
