@@ -2148,6 +2148,15 @@ body::after {
   left: 0;
 }
 
+.popup-included__text {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.popup-included__text:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
 .popup-included__body .included__item {
   width: 100%;
 }
