@@ -4581,6 +4581,7 @@ body::after {
 }
 
 .item-flight {
+  cursor: pointer;
   line-height: 140%;
   padding: 1.5rem;
   background-color: #fff;
@@ -4588,6 +4589,9 @@ body::after {
   display: -ms-grid;
   display: grid;
   gap: 0.875rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: 1px solid transparent;
 }
 
 .item-flight__body {
@@ -6876,6 +6880,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding-bottom: 3rem;
   }
 
+  .flight-main {
+    padding-top: 1.5625rem;
+  }
+
   .item-flight__body {
     gap: 2.3125rem;
   }
@@ -7228,6 +7236,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding-bottom: 0.0000000625rem;
   }
 
+  .flight-main {
+    padding-top: 0.9375rem;
+  }
+
   .item-flight__body {
     gap: 0.875rem;
   }
@@ -7376,7 +7388,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .page-flight {
-    padding-top: 11.25rem;
+    padding-top: 10rem;
   }
 }
 
@@ -7723,6 +7735,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
+@supports (padding-top: clamp( 0.9375rem , 0.7523148148rem  +  0.9259259259vw , 1.5625rem )) {
+    .flight-main {
+      padding-top: clamp( 0.9375rem , 0.7523148148rem  +  0.9259259259vw , 1.5625rem );
+    }
+}
+
+@supports not (padding-top: clamp( 0.9375rem , 0.7523148148rem  +  0.9259259259vw , 1.5625rem )) {
+    .flight-main {
+      padding-top: calc(0.9375rem + 0.625 * (100vw - 20rem) / 67.5);
+    }
+}
+
 @supports (gap: clamp( 0.875rem , 0.4490740741rem  +  2.1296296296vw , 2.3125rem )) {
     .item-flight__body {
       gap: clamp( 0.875rem , 0.4490740741rem  +  2.1296296296vw , 2.3125rem );
@@ -7805,6 +7829,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .item-rooms:hover {
+    outline: 1px solid #4845DD;
+    -webkit-box-shadow: 0 4px 14px rgba(72, 69, 221, 0.15);
+            box-shadow: 0 4px 14px rgba(72, 69, 221, 0.15);
+  }
+
+  .item-flight:hover {
     outline: 1px solid #4845DD;
     -webkit-box-shadow: 0 4px 14px rgba(72, 69, 221, 0.15);
             box-shadow: 0 4px 14px rgba(72, 69, 221, 0.15);
