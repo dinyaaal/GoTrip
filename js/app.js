@@ -3783,7 +3783,7 @@
             return api;
         }
         function rangeInit() {
-            const priceSlider = document.querySelector("#range");
+            const priceSlider = document.querySelector("#price");
             if (priceSlider) {
                 priceSlider.getAttribute("data-from");
                 priceSlider.getAttribute("data-to");
@@ -3800,6 +3800,203 @@
                 priceSlider.noUiSlider.on("update", (function(values, handle) {
                     let formattedValue = "$" + Number(values[handle]).toFixed(0);
                     skipValues[handle].innerHTML = formattedValue;
+                }));
+            }
+            const outboundDeparture = document.querySelector("#outbound-departure");
+            if (outboundDeparture) {
+                const sliderTime = document.getElementById("outbound-departure-start");
+                const sliderTime2 = document.getElementById("outbound-departure-end");
+                initialize(outboundDeparture, {
+                    start: [ 0, 1440 ],
+                    range: {
+                        min: 0,
+                        max: 1440
+                    },
+                    step: 15
+                });
+                outboundDeparture.noUiSlider.on("update", (function(values, handle) {
+                    const hours = [];
+                    const minutes = [];
+                    for (let i = 0; i < values.length; i++) {
+                        hours[i] = Math.floor(values[i] / 60);
+                        minutes[i] = values[i] - hours[i] * 60;
+                        if (hours[i].toString().length == 1) hours[i] = "0" + hours[i];
+                        if (minutes[i].toString().length == 1) minutes[i] = "0" + minutes[i];
+                        if (minutes[i] == 0) minutes[i] = "00";
+                        if (hours[i] >= 12) if (hours[i] == 12) {
+                            hours[i] = hours[i];
+                            minutes[i] = minutes[i] + " PM";
+                        } else if (hours[i] == 24) {
+                            hours[i] = 11;
+                            minutes[i] = "59 PM";
+                        } else {
+                            hours[i] = hours[i] - 12;
+                            minutes[i] = minutes[i] + " PM";
+                        } else {
+                            hours[i] = hours[i];
+                            minutes[i] = minutes[i] + " AM";
+                        }
+                        if (hours[i] == 0) {
+                            hours[i] = 12;
+                            minutes[i] = minutes[i];
+                        }
+                    }
+                    sliderTime.innerHTML = hours[0] + ":" + minutes[0];
+                    sliderTime2.innerHTML = hours[1] + ":" + minutes[1];
+                }));
+            }
+            const outboundArrival = document.querySelector("#outbound-arrival");
+            if (outboundArrival) {
+                const sliderTime = document.getElementById("outbound-arrival-start");
+                const sliderTime2 = document.getElementById("outbound-arrival-end");
+                initialize(outboundArrival, {
+                    start: [ 0, 1440 ],
+                    range: {
+                        min: 0,
+                        max: 1440
+                    },
+                    step: 15
+                });
+                outboundArrival.noUiSlider.on("update", (function(values, handle) {
+                    const hours = [];
+                    const minutes = [];
+                    for (let i = 0; i < values.length; i++) {
+                        hours[i] = Math.floor(values[i] / 60);
+                        minutes[i] = values[i] - hours[i] * 60;
+                        if (hours[i].toString().length == 1) hours[i] = "0" + hours[i];
+                        if (minutes[i].toString().length == 1) minutes[i] = "0" + minutes[i];
+                        if (minutes[i] == 0) minutes[i] = "00";
+                        if (hours[i] >= 12) if (hours[i] == 12) {
+                            hours[i] = hours[i];
+                            minutes[i] = minutes[i] + " PM";
+                        } else if (hours[i] == 24) {
+                            hours[i] = 11;
+                            minutes[i] = "59 PM";
+                        } else {
+                            hours[i] = hours[i] - 12;
+                            minutes[i] = minutes[i] + " PM";
+                        } else {
+                            hours[i] = hours[i];
+                            minutes[i] = minutes[i] + " AM";
+                        }
+                        if (hours[i] == 0) {
+                            hours[i] = 12;
+                            minutes[i] = minutes[i];
+                        }
+                    }
+                    sliderTime.innerHTML = hours[0] + ":" + minutes[0];
+                    sliderTime2.innerHTML = hours[1] + ":" + minutes[1];
+                }));
+            }
+            const inboundDeparture = document.querySelector("#inbound-departure");
+            if (inboundDeparture) {
+                const sliderTime = document.getElementById("inbound-departure-start");
+                const sliderTime2 = document.getElementById("inbound-departure-end");
+                initialize(inboundDeparture, {
+                    start: [ 0, 1440 ],
+                    range: {
+                        min: 0,
+                        max: 1440
+                    },
+                    step: 15
+                });
+                inboundDeparture.noUiSlider.on("update", (function(values, handle) {
+                    const hours = [];
+                    const minutes = [];
+                    for (let i = 0; i < values.length; i++) {
+                        hours[i] = Math.floor(values[i] / 60);
+                        minutes[i] = values[i] - hours[i] * 60;
+                        if (hours[i].toString().length == 1) hours[i] = "0" + hours[i];
+                        if (minutes[i].toString().length == 1) minutes[i] = "0" + minutes[i];
+                        if (minutes[i] == 0) minutes[i] = "00";
+                        if (hours[i] >= 12) if (hours[i] == 12) {
+                            hours[i] = hours[i];
+                            minutes[i] = minutes[i] + " PM";
+                        } else if (hours[i] == 24) {
+                            hours[i] = 11;
+                            minutes[i] = "59 PM";
+                        } else {
+                            hours[i] = hours[i] - 12;
+                            minutes[i] = minutes[i] + " PM";
+                        } else {
+                            hours[i] = hours[i];
+                            minutes[i] = minutes[i] + " AM";
+                        }
+                        if (hours[i] == 0) {
+                            hours[i] = 12;
+                            minutes[i] = minutes[i];
+                        }
+                    }
+                    sliderTime.innerHTML = hours[0] + ":" + minutes[0];
+                    sliderTime2.innerHTML = hours[1] + ":" + minutes[1];
+                }));
+            }
+            const inboundArrival = document.querySelector("#inbound-arrival");
+            if (inboundArrival) {
+                const sliderTime = document.getElementById("inbound-arrival-start");
+                const sliderTime2 = document.getElementById("inbound-arrival-end");
+                initialize(inboundArrival, {
+                    start: [ 0, 1440 ],
+                    range: {
+                        min: 0,
+                        max: 1440
+                    },
+                    step: 15
+                });
+                inboundArrival.noUiSlider.on("update", (function(values, handle) {
+                    const hours = [];
+                    const minutes = [];
+                    for (let i = 0; i < values.length; i++) {
+                        hours[i] = Math.floor(values[i] / 60);
+                        minutes[i] = values[i] - hours[i] * 60;
+                        if (hours[i].toString().length == 1) hours[i] = "0" + hours[i];
+                        if (minutes[i].toString().length == 1) minutes[i] = "0" + minutes[i];
+                        if (minutes[i] == 0) minutes[i] = "00";
+                        if (hours[i] >= 12) if (hours[i] == 12) {
+                            hours[i] = hours[i];
+                            minutes[i] = minutes[i] + " PM";
+                        } else if (hours[i] == 24) {
+                            hours[i] = 11;
+                            minutes[i] = "59 PM";
+                        } else {
+                            hours[i] = hours[i] - 12;
+                            minutes[i] = minutes[i] + " PM";
+                        } else {
+                            hours[i] = hours[i];
+                            minutes[i] = minutes[i] + " AM";
+                        }
+                        if (hours[i] == 0) {
+                            hours[i] = 12;
+                            minutes[i] = minutes[i];
+                        }
+                    }
+                    sliderTime.innerHTML = hours[0] + ":" + minutes[0];
+                    sliderTime2.innerHTML = hours[1] + ":" + minutes[1];
+                }));
+            }
+            const flightDuration = document.querySelector("#flight-duration");
+            if (flightDuration) {
+                const sliderTime = document.getElementById("flight-duration-start");
+                const sliderTime2 = document.getElementById("flight-duration-end");
+                initialize(flightDuration, {
+                    start: [ 0, 1440 ],
+                    range: {
+                        min: 0,
+                        max: 1440
+                    },
+                    step: 15
+                });
+                flightDuration.noUiSlider.on("update", (function(values, handle) {
+                    const hours = [];
+                    const minutes = [];
+                    for (let i = 0; i < values.length; i++) {
+                        hours[i] = Math.floor(values[i] / 60);
+                        minutes[i] = values[i] % 60;
+                        if (hours[i].toString().length == 1) hours[i] = "0" + hours[i];
+                        if (minutes[i].toString().length == 1) minutes[i] = "0" + minutes[i];
+                    }
+                    sliderTime.innerHTML = hours[0] + "h " + minutes[0] + "m";
+                    sliderTime2.innerHTML = hours[1] + "h " + minutes[1] + "m";
                 }));
             }
         }
@@ -7273,6 +7470,23 @@
                 },
                 on: {}
             });
+            if (document.querySelector(".gallery-popup-room__slider")) new swiper_core_Swiper(".gallery-popup-room__slider", {
+                modules: [ Navigation ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                speed: 800,
+                breakpoints: {
+                    479.98: {
+                        slidesPerView: 2
+                    },
+                    767.98: {
+                        slidesPerView: 2.2
+                    }
+                },
+                on: {}
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();
@@ -9269,6 +9483,14 @@ PERFORMANCE OF THIS SOFTWARE.
                 currentContainerCheckboxes.forEach((function(checkbox) {
                     checkbox.checked = isChecked;
                 }));
+            }));
+        }));
+        const buttons = document.querySelectorAll(".item-rooms__button");
+        buttons.forEach((button => {
+            button.addEventListener("click", (function() {
+                this.closest(".rooms__item").classList.toggle("selected");
+                const buttonText = this.querySelector("span");
+                if (buttonText.textContent === "Select") buttonText.textContent = "Selected"; else buttonText.textContent = "Select";
             }));
         }));
         window["FLS"] = 0;

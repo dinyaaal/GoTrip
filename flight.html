@@ -723,766 +723,746 @@
 			</div>
 		</header>
 
-		<main class="page page-hotel">
-			<div class="page__navigation">
-				<div class="page__container">
-					<nav class="page__breadcrumbs breadcrumbs">
-						<ul class="breadcrumbs__list">
-							<li class="breadcrumbs__item breadcrumbs-stay">
-								<div class="breadcrumbs__text _icon-stay">Stay</div>
-							</li>
-							<li class="breadcrumbs__item breadcrumbs-flight breadcrumbs__item--inactive">
-								<div class="breadcrumbs__text _icon-flights">Flight</div>
-
-
-							</li>
-							<li class="breadcrumbs__item breadcrumbs-transfer breadcrumbs__item--inactive">
-								<div class="breadcrumbs__text _icon-transfer">Transfer</div>
-
-
-							</li>
-							<li class="breadcrumbs__item breadcrumbs-pass breadcrumbs__item--inactive">
-								<div class="breadcrumbs__text _icon-pass">Ski pass</div>
-
-							</li>
-
-						</ul>
-					</nav>
-				</div>
-			</div>
-			<section class="accommodation-main">
-				<div class="accommodation-main__header header-accommodation">
-					<div class="header-accommodation__container">
-						<div class="header-accommodation__body">
-							<h2 class="header-accommodation__title title">Westminster Walking Tour & Westminster Abbey Entry</h2>
-							<div class="header-accommodation__info">
-								<p>Hotel, Ciutat Vella, Barcelona</p>
-							</div>
-							<div class="header-accommodation__items">
-								<div class="header-accommodation__item item-header-accommodation">
-									<div class="item-header-accommodation__text _icon-ski">
-										<p>0.2 km from ski</p>
+		<main class="page page-flight">
+			<section class="flight-main">
+				<div class="flight-main__container">
+					<aside class="flight-main__filters filters-trip">
+						<div data-spollers="991.98,max" class="filters-trip__items">
+							<details class="filters-trip__item trip-filter popular">
+								<summary class="trip-filter__text">Popular filters</summary>
+								<div class="trip-filter__items filter-items">
+									<div class="filter-items__item item-filter breakfast">
+										<label class="item-filter__type">
+											<p>
+												Breakfast included
+											</p>
+											<input type="checkbox" name="stay" id="" class="real-checkbox">
+											<span class="custom-checkbox"></span>
+										</label>
+										<div class="item-filter__number">14</div>
+									</div>
+									<div class="filter-items__item item-filter breakfast-dinner">
+										<label class="item-filter__type">
+											<p>
+												Breakfast & dinner included
+											</p>
+											<input type="checkbox" name="stay" id="" class="real-checkbox">
+											<span class="custom-checkbox"></span>
+										</label>
+										<div class="item-filter__number">7</div>
+									</div>
+									<div class="filter-items__item item-filter dinner">
+										<label class="item-filter__type">
+											<p>
+												Dinner included
+											</p>
+											<input type="checkbox" name="stay" id="" class="real-checkbox">
+											<span class="custom-checkbox"></span>
+										</label>
+										<div class="item-filter__number">7</div>
 									</div>
 								</div>
-								<div class="header-accommodation__item item-header-accommodation">
-									<div class="item-header-accommodation__text _icon-ski">
-										<p>Taking safety measures</p>
+							</details>
+							<details class="filters-trip__item trip-filter airports">
+								<summary class="trip-filter__text">Airports</summary>
+								<div class="trip-filter__items filter-items">
+									<div class="filter-items__item item-filter">
+										<label class="item-filter__type">
+											<p>
+												Depart / return same
+											</p>
+											<input type="checkbox" name="stay" id="" class="real-checkbox">
+											<span class="custom-checkbox"></span>
+										</label>
+										<div class="item-filter__number">7</div>
+									</div>
+
+								</div>
+							</details>
+							<details class="filters-trip__item trip-filter outbound">
+								<summary class="trip-filter__text">Outbound flight times</summary>
+								<div class="trip-filter__items filter-items">
+									<div class="trip-filter__range range">
+										<p class="range__text">Departure</p>
+										<div class="range__value">
+											<div id="outbound-departure-start" class="range__start"></div>
+											-
+											<div id="outbound-departure-end" class="range__end"></div>
+										</div>
+										<div class="range__line" id="outbound-departure"></div>
+									</div>
+									<div class="trip-filter__range range">
+										<p class="range__text">Arrival</p>
+										<div class="range__value">
+											<div id="outbound-arrival-start" class="range__start"></div>
+											-
+											<div id="outbound-arrival-end" class="range__end"></div>
+										</div>
+										<div class="range__line" id="outbound-arrival"></div>
 									</div>
 								</div>
-								<div class="header-accommodation__item item-header-accommodation item-header-accommodation--green">
-									<div class="item-header-accommodation__text _icon-ski">
-										<p>Free cancellation</p>
+
+							</details>
+							<details class="filters-trip__item trip-filter inbound">
+								<summary class="trip-filter__text">Inbound flight times</summary>
+								<div class="trip-filter__items filter-items">
+									<div class="trip-filter__range range">
+										<p class="range__text">Departure</p>
+										<div class="range__value">
+											<div id="inbound-departure-start" class="range__start"></div>
+											-
+											<div id="inbound-departure-end" class="range__end"></div>
+										</div>
+										<div class="range__line" id="inbound-departure"></div>
+									</div>
+									<div class="trip-filter__range range">
+										<p class="range__text">Arrival</p>
+										<div class="range__value">
+											<div id="inbound-arrival-start" class="range__start"></div>
+											-
+											<div id="inbound-arrival-end" class="range__end"></div>
+										</div>
+										<div class="range__line" id="inbound-arrival"></div>
 									</div>
 								</div>
-							</div>
+
+							</details>
+							<details class="filters-trip__item trip-filter airline">
+								<summary class="trip-filter__text">Airline</summary>
+								<div class="trip-filter__items filter-items">
+									<div class="filter-items__item item-filter">
+										<label class="item-filter__type">
+											<p>
+												KLM Cityhopper
+											</p>
+											<input type="checkbox" name="stay" id="" class="real-checkbox">
+											<span class="custom-checkbox"></span>
+										</label>
+										<div class="item-filter__number">14</div>
+									</div>
+									<div class="filter-items__item item-filter">
+										<label class="item-filter__type">
+											<p>
+												KLM Royal Dutch Airlines
+											</p>
+											<input type="checkbox" name="stay" id="" class="real-checkbox">
+											<span class="custom-checkbox"></span>
+										</label>
+										<div class="item-filter__number">7</div>
+									</div>
+								</div>
+							</details>
+							<details class="filters-trip__item trip-filter duration">
+								<summary class="trip-filter__text">Duration</summary>
+								<div class="trip-filter__items filter-items">
+									<div class="trip-filter__range range">
+										<p class="range__text">Flight duration</p>
+										<div class="range__value">
+											<div id="flight-duration-start" class="range__start"></div>
+											-
+											<div id="flight-duration-end" class="range__end"></div>
+										</div>
+										<div class="range__line" id="flight-duration"></div>
+									</div>
+
+								</div>
+
+							</details>
 						</div>
-						<div class="header-accommodation__rating">
-							<div class="rating-accommodation">
-								<div class="rating-accommodation__body">
-									<p class="rating-accommodation__overall-rating">Ordinary</p>
-									<p class="rating-accommodation__reviews">2045 reviews</p>
-								</div>
-								<div class="rating-accommodation__value value-rating">4.7</div>
-							</div>
+					</aside>
+					<div class="flight-main__body body-flight-main">
+						<div class="body-flight-main__header">
+							<h1 class="body-flight-main__title title">Showing 53 out of 53 trip options</h1>
+							<button class="header-trip-main__sort"><span>By price</span></button>
 						</div>
-					</div>
-				</div>
-				<div class="accommodation-main__gallery gallery-accommodation">
-					<div class="gallery-accommodation__container">
+						<div class="body-flight-main__content">
+							<div class="body-flight-main__items">
+								<div class="body-flight-main__item item-flight">
+									<div class="item-flight__body body-item-flight">
+										<div class="item-flight__block block-item-flight">
+											<p class="block-item-flight__date">Thu, 4 Apr</p>
+											<div class="block-item-flight__body">
+												<div class="item-flight__image">
+													<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--departure">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<div class="item-flight__route route-item-flight">
+													<p class="route-item-flight__time">4h 05m</p>
+													<span class="route-item-flight__line"></span>
+													<p class="route-item-flight__text">Nonstop</p>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--arrival">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<p class="item-flight__flight-time">4h 05m</p>
+											</div>
 
-						<div class="gallery-accommodation__slider swiper">
+										</div>
+										<div class="item-flight__block block-item-flight">
+											<p class="block-item-flight__date">Thu, 4 Apr</p>
+											<div class="block-item-flight__body">
+												<div class="item-flight__image">
+													<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--departure">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<div class="item-flight__route route-item-flight">
+													<p class="route-item-flight__time">4h 05m</p>
+													<span class="route-item-flight__line"></span>
+													<p class="route-item-flight__text">Nonstop</p>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--arrival">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<p class="item-flight__flight-time">4h 05m</p>
+											</div>
 
-							<div data-gallery class="gallery-accommodation__items swiper-wrapper">
-
-								<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation swiper-slide gallery__image">
-									<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img alt="Image" src="img/Accommodation/01.jpg" class="gallery__preview ibg"></picture>
-								</a>
-								<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation swiper-slide gallery__image">
-									<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img alt="Image" src="img/Accommodation/01.jpg" class="gallery__preview ibg"></picture>
-								</a>
-								<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation swiper-slide gallery__image">
-									<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img alt="Image" src="img/Accommodation/01.jpg" class="gallery__preview ibg"></picture>
-								</a>
-								<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation swiper-slide gallery__image">
-									<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img alt="Image" src="img/Accommodation/01.jpg" class="gallery__preview ibg"></picture>
-								</a>
-								<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image item-gallery-accommodation--more swiper-slide">
-									<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img alt="Image" src="img/Accommodation/01.jpg" class="gallery__preview ibg"></picture>
-									<div class="item-gallery-accommodation__more more-item-gallery-accommodation">
-										<div class="more-item-gallery-accommodation__content">
-											<p class="more-item-gallery-accommodation__text">+ <span>10</span> photos</p>
 										</div>
 									</div>
-								</a>
-								<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-								<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-								<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-								<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-								<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-								<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-								<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-								<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-								<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-								<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-							</div>
-							<div class="gallery-accommodation__fraction">
-								<div class="gallery-accommodation__pagination"></div>
-							</div>
-
-						</div>
-						<!-- <div data-gallery class="gallery-accommodation__items">
-									<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image">
-										<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img alt="Image" src="img/Accommodation/01.jpg" class="gallery__preview ibg"></picture>
-									</a>
-									<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image">
-										<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img alt="Image" src="img/Accommodation/01.jpg" class="gallery__preview ibg"></picture>
-									</a>
-									<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image">
-										<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img alt="Image" src="img/Accommodation/01.jpg" class="gallery__preview ibg"></picture>
-									</a>
-									<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image">
-										<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img alt="Image" src="img/Accommodation/01.jpg" class="gallery__preview ibg"></picture>
-									</a>
-									<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image item-gallery-accommodation--more">
-										<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img alt="Image" src="img/Accommodation/01.jpg" class="gallery__preview ibg"></picture>
-										<div class="item-gallery-accommodation__more more-item-gallery-accommodation">
-											<div class="more-item-gallery-accommodation__content">
-												<p class="more-item-gallery-accommodation__text">+ <span>10</span> photos</p>
+									<div class="item-flight__footer footer-item-flight">
+										<div class="footer-item-flight__items">
+											<div class="footer-item-flight__item">
+												<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+											</div>
+											<div class="footer-item-flight__item">
+												<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
 											</div>
 										</div>
-									</a>
-									<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-									<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-									<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-									<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-									<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-									<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-									<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-									<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-									<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-									<a href="img/Accommodation/01.jpg" class="item-gallery-accommodation gallery__image"></a>
-	
-								</div> -->
-					</div>
-				</div>
-				<div class="accommodation-main__body body-accommodation">
-					<div class="body-accommodation__container">
-						<div class="body-accommodation__content">
-							<div class="body-accommodation__overview overview-body-accommodation">
-								<h3 class="overview-body-accommodation__title title title--small">Overview</h3>
-								<div class="overview-body-accommodation__items">
-									<div class="overview-body-accommodation__item item-overview item-overview--guests">
-										<p class="item-overview__text">Up to 2 guests</p>
+										<div class="total-card__price total-card-price">
+											<div class="price-accommodation__value">
+												<p>US$ <span>399</span></p>
+											</div>
+										</div>
 									</div>
-									<div class="overview-body-accommodation__item item-overview item-overview--bedroom">
-										<p class="item-overview__text">1 bedroom</p>
-									</div>
-									<div class="overview-body-accommodation__item item-overview item-overview--size">
-										<p class="item-overview__text">35m2</p>
-									</div>
-									<div class="overview-body-accommodation__item item-overview item-overview--bed">
-										<p class="item-overview__text">1 double bed</p>
-									</div>
-									<div class="overview-body-accommodation__item item-overview item-overview--bathroom">
-										<p class="item-overview__text">1 bathroom</p>
-									</div>
-									<div class="overview-body-accommodation__item item-overview item-overview--view">
-										<p class="item-overview__text">Mountain view</p>
-									</div>
+
+
 								</div>
-							</div>
-							<div class="body-accommodation__description description-body-accommodation">
-								<h3 class="description-body-accommodation__title title title--small">Description</h3>
-								<div data-showmore="items" class="description-body-accommodation__text">
-									<div data-showmore-content="2" class="description-body-accommodation__content">
-										<p>You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.</p>
-										<p>2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen 2 hot plates, oven,</p>
-										<p>You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.</p>
+								<div class="body-flight-main__item item-flight">
+									<div class="item-flight__body body-item-flight">
+										<div class="item-flight__block block-item-flight">
+											<p class="block-item-flight__date">Thu, 4 Apr</p>
+											<div class="block-item-flight__body">
+												<div class="item-flight__image">
+													<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--departure">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<div class="item-flight__route route-item-flight">
+													<p class="route-item-flight__time">4h 05m</p>
+													<span class="route-item-flight__line"></span>
+													<p class="route-item-flight__text">Nonstop</p>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--arrival">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<p class="item-flight__flight-time">4h 05m</p>
+											</div>
+
+										</div>
+										<div class="item-flight__block block-item-flight">
+											<p class="block-item-flight__date">Thu, 4 Apr</p>
+											<div class="block-item-flight__body">
+												<div class="item-flight__image">
+													<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--departure">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<div class="item-flight__route route-item-flight">
+													<p class="route-item-flight__time">4h 05m</p>
+													<span class="route-item-flight__line"></span>
+													<p class="route-item-flight__text">Nonstop</p>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--arrival">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<p class="item-flight__flight-time">4h 05m</p>
+											</div>
+
+										</div>
 									</div>
-									<button hidden data-showmore-button type="button" class="description-body-accommodation__more">
-										<span>Show more</span>
-										<span>Show less</span>
-									</button>
+									<div class="item-flight__footer footer-item-flight">
+										<div class="footer-item-flight__items">
+											<div class="footer-item-flight__item">
+												<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+											</div>
+											<div class="footer-item-flight__item">
+												<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+											</div>
+										</div>
+										<div class="total-card__price total-card-price">
+											<div class="price-accommodation__value">
+												<p>US$ <span>399</span></p>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+								<div class="body-flight-main__item item-flight">
+									<div class="item-flight__body body-item-flight">
+										<div class="item-flight__block block-item-flight">
+											<p class="block-item-flight__date">Thu, 4 Apr</p>
+											<div class="block-item-flight__body">
+												<div class="item-flight__image">
+													<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--departure">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<div class="item-flight__route route-item-flight">
+													<p class="route-item-flight__time">4h 05m</p>
+													<span class="route-item-flight__line"></span>
+													<p class="route-item-flight__text">Nonstop</p>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--arrival">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<p class="item-flight__flight-time">4h 05m</p>
+											</div>
+
+										</div>
+										<div class="item-flight__block block-item-flight">
+											<p class="block-item-flight__date">Thu, 4 Apr</p>
+											<div class="block-item-flight__body">
+												<div class="item-flight__image">
+													<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--departure">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<div class="item-flight__route route-item-flight">
+													<p class="route-item-flight__time">4h 05m</p>
+													<span class="route-item-flight__line"></span>
+													<p class="route-item-flight__text">Nonstop</p>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--arrival">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<p class="item-flight__flight-time">4h 05m</p>
+											</div>
+
+										</div>
+									</div>
+									<div class="item-flight__footer footer-item-flight">
+										<div class="footer-item-flight__items">
+											<div class="footer-item-flight__item">
+												<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+											</div>
+											<div class="footer-item-flight__item">
+												<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+											</div>
+										</div>
+										<div class="total-card__price total-card-price">
+											<div class="price-accommodation__value">
+												<p>US$ <span>399</span></p>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+								<div class="body-flight-main__item item-flight">
+									<div class="item-flight__body body-item-flight">
+										<div class="item-flight__block block-item-flight">
+											<p class="block-item-flight__date">Thu, 4 Apr</p>
+											<div class="block-item-flight__body">
+												<div class="item-flight__image">
+													<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--departure">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<div class="item-flight__route route-item-flight">
+													<p class="route-item-flight__time">4h 05m</p>
+													<span class="route-item-flight__line"></span>
+													<p class="route-item-flight__text">Nonstop</p>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--arrival">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<p class="item-flight__flight-time">4h 05m</p>
+											</div>
+
+										</div>
+										<div class="item-flight__block block-item-flight">
+											<p class="block-item-flight__date">Thu, 4 Apr</p>
+											<div class="block-item-flight__body">
+												<div class="item-flight__image">
+													<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--departure">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<div class="item-flight__route route-item-flight">
+													<p class="route-item-flight__time">4h 05m</p>
+													<span class="route-item-flight__line"></span>
+													<p class="route-item-flight__text">Nonstop</p>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--arrival">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<p class="item-flight__flight-time">4h 05m</p>
+											</div>
+
+										</div>
+									</div>
+									<div class="item-flight__footer footer-item-flight">
+										<div class="footer-item-flight__items">
+											<div class="footer-item-flight__item">
+												<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+											</div>
+											<div class="footer-item-flight__item">
+												<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+											</div>
+										</div>
+										<div class="total-card__price total-card-price">
+											<div class="price-accommodation__value">
+												<p>US$ <span>399</span></p>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+								<div class="body-flight-main__item item-flight">
+									<div class="item-flight__body body-item-flight">
+										<div class="item-flight__block block-item-flight">
+											<p class="block-item-flight__date">Thu, 4 Apr</p>
+											<div class="block-item-flight__body">
+												<div class="item-flight__image">
+													<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--departure">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<div class="item-flight__route route-item-flight">
+													<p class="route-item-flight__time">4h 05m</p>
+													<span class="route-item-flight__line"></span>
+													<p class="route-item-flight__text">Nonstop</p>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--arrival">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<p class="item-flight__flight-time">4h 05m</p>
+											</div>
+
+										</div>
+										<div class="item-flight__block block-item-flight">
+											<p class="block-item-flight__date">Thu, 4 Apr</p>
+											<div class="block-item-flight__body">
+												<div class="item-flight__image">
+													<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--departure">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<div class="item-flight__route route-item-flight">
+													<p class="route-item-flight__time">4h 05m</p>
+													<span class="route-item-flight__line"></span>
+													<p class="route-item-flight__text">Nonstop</p>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--arrival">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<p class="item-flight__flight-time">4h 05m</p>
+											</div>
+
+										</div>
+									</div>
+									<div class="item-flight__footer footer-item-flight">
+										<div class="footer-item-flight__items">
+											<div class="footer-item-flight__item">
+												<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+											</div>
+											<div class="footer-item-flight__item">
+												<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+											</div>
+										</div>
+										<div class="total-card__price total-card-price">
+											<div class="price-accommodation__value">
+												<p>US$ <span>399</span></p>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+								<div class="body-flight-main__item item-flight">
+									<div class="item-flight__body body-item-flight">
+										<div class="item-flight__block block-item-flight">
+											<p class="block-item-flight__date">Thu, 4 Apr</p>
+											<div class="block-item-flight__body">
+												<div class="item-flight__image">
+													<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--departure">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<div class="item-flight__route route-item-flight">
+													<p class="route-item-flight__time">4h 05m</p>
+													<span class="route-item-flight__line"></span>
+													<p class="route-item-flight__text">Nonstop</p>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--arrival">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<p class="item-flight__flight-time">4h 05m</p>
+											</div>
+
+										</div>
+										<div class="item-flight__block block-item-flight">
+											<p class="block-item-flight__date">Thu, 4 Apr</p>
+											<div class="block-item-flight__body">
+												<div class="item-flight__image">
+													<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--departure">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<div class="item-flight__route route-item-flight">
+													<p class="route-item-flight__time">4h 05m</p>
+													<span class="route-item-flight__line"></span>
+													<p class="route-item-flight__text">Nonstop</p>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--arrival">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<p class="item-flight__flight-time">4h 05m</p>
+											</div>
+
+										</div>
+									</div>
+									<div class="item-flight__footer footer-item-flight">
+										<div class="footer-item-flight__items">
+											<div class="footer-item-flight__item">
+												<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+											</div>
+											<div class="footer-item-flight__item">
+												<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+											</div>
+										</div>
+										<div class="total-card__price total-card-price">
+											<div class="price-accommodation__value">
+												<p>US$ <span>399</span></p>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+								<div class="body-flight-main__item item-flight">
+									<div class="item-flight__body body-item-flight">
+										<div class="item-flight__block block-item-flight">
+											<p class="block-item-flight__date">Thu, 4 Apr</p>
+											<div class="block-item-flight__body">
+												<div class="item-flight__image">
+													<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--departure">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<div class="item-flight__route route-item-flight">
+													<p class="route-item-flight__time">4h 05m</p>
+													<span class="route-item-flight__line"></span>
+													<p class="route-item-flight__text">Nonstop</p>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--arrival">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<p class="item-flight__flight-time">4h 05m</p>
+											</div>
+
+										</div>
+										<div class="item-flight__block block-item-flight">
+											<p class="block-item-flight__date">Thu, 4 Apr</p>
+											<div class="block-item-flight__body">
+												<div class="item-flight__image">
+													<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--departure">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<div class="item-flight__route route-item-flight">
+													<p class="route-item-flight__time">4h 05m</p>
+													<span class="route-item-flight__line"></span>
+													<p class="route-item-flight__text">Nonstop</p>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--arrival">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<p class="item-flight__flight-time">4h 05m</p>
+											</div>
+
+										</div>
+									</div>
+									<div class="item-flight__footer footer-item-flight">
+										<div class="footer-item-flight__items">
+											<div class="footer-item-flight__item">
+												<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+											</div>
+											<div class="footer-item-flight__item">
+												<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+											</div>
+										</div>
+										<div class="total-card__price total-card-price">
+											<div class="price-accommodation__value">
+												<p>US$ <span>399</span></p>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+								<div class="body-flight-main__item item-flight">
+									<div class="item-flight__body body-item-flight">
+										<div class="item-flight__block block-item-flight">
+											<p class="block-item-flight__date">Thu, 4 Apr</p>
+											<div class="block-item-flight__body">
+												<div class="item-flight__image">
+													<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--departure">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<div class="item-flight__route route-item-flight">
+													<p class="route-item-flight__time">4h 05m</p>
+													<span class="route-item-flight__line"></span>
+													<p class="route-item-flight__text">Nonstop</p>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--arrival">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<p class="item-flight__flight-time">4h 05m</p>
+											</div>
+
+										</div>
+										<div class="item-flight__block block-item-flight">
+											<p class="block-item-flight__date">Thu, 4 Apr</p>
+											<div class="block-item-flight__body">
+												<div class="item-flight__image">
+													<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--departure">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<div class="item-flight__route route-item-flight">
+													<p class="route-item-flight__time">4h 05m</p>
+													<span class="route-item-flight__line"></span>
+													<p class="route-item-flight__text">Nonstop</p>
+												</div>
+												<div class="item-flight__time time-item-flight time-item-flight--arrival">
+													<span class="time-item-flight__value">14:00</span>
+													<p class="time-item-flight__text">SAW</p>
+												</div>
+												<p class="item-flight__flight-time">4h 05m</p>
+											</div>
+
+										</div>
+									</div>
+									<div class="item-flight__footer footer-item-flight">
+										<div class="footer-item-flight__items">
+											<div class="footer-item-flight__item">
+												<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+											</div>
+											<div class="footer-item-flight__item">
+												<picture><source srcset="img/flights/01.webp" type="image/webp"><img class="ibg" src="img/flights/01.jpg" alt="Image"></picture>
+											</div>
+										</div>
+										<div class="total-card__price total-card-price">
+											<div class="price-accommodation__value">
+												<p>US$ <span>399</span></p>
+											</div>
+										</div>
+									</div>
+
+
 								</div>
 							</div>
 						</div>
-						<div data-da=".body-accommodation__content,767.98" class="body-accommodation__total-card total-card-accommodation">
-							<div class="total-card-accommodation__room">
-								<p>2x Superior Triple Room</p>
-							</div>
-							<div class="total-card-accommodation__price price-total-card-accommodation">
+					</div>
+					<div class="flight-main__total-card total-card">
+						<div data-spollers class="total-card__items spollers">
+							<details class="total-card__item item-total-card spollers__item">
+								<summary class="item-total-card__title spollers__title">Accommodation</summary>
+								<div class="item-total-card__body body-item-total-card spollers__body">
+									<img src="img/icons/included/icon_stay.svg" alt="Image">
+									<div class="body-item-total-card__content">
+										<p class="body-item-total-card__text apartment">1 bedroom appartment for 4 people x1</p>
+										<p class="body-item-total-card__text included">Breakfast & dinner included</p>
+										<p class="body-item-total-card__text check">Check-in: 2:00 PM - 6:00 PM</p>
+									</div>
+								</div>
+							</details>
+							<details class="total-card__item item-total-card spollers__item">
+								<summary class="item-total-card__title spollers__title">Flights</summary>
+								<div class="item-total-card__body body-item-total-card spollers__body">
+									<div class="body-item-total-card__content">
+										<p class="body-item-total-card__text">1 bedroom appartment for 4 people x1</p>
+									</div>
+								</div>
+							</details>
+						</div>
+						<div class="total-card__footer">
+							<div class="total-card__price total-card-price">
 								<div class="price-accommodation__value">
 									<p>US$ <span>399</span></p>
 								</div>
 								<div class="price-accommodation__info">
-									<p>per adult for 6 nights</p>
+									<p>per one people</p>
 								</div>
 							</div>
-							<div class="total-card-accommodation__includes include-total-card-accommodation">
-								<div class="include-total-card-accommodation__text">Price includes:</div>
-								<div class="include-total-card-accommodation__items">
-									<div class="include-total-card-accommodation__item flights">
-										<p class="include-total-card-accommodation__text">Flights</p>
-									</div>
-									<div class="include-total-card-accommodation__item stay">
-										<p class="include-total-card-accommodation__text">Stay</p>
-									</div>
-									<div class="include-total-card-accommodation__item transfer">
-										<p class="include-total-card-accommodation__text">Transfer</p>
-									</div>
-									<div class="include-total-card-accommodation__item gear">
-										<p class="include-total-card-accommodation__text">Rental gear</p>
-									</div>
-									<div class="include-total-card-accommodation__item pass">
-										<p class="include-total-card-accommodation__text">Ski pass</p>
-									</div>
+							<div class="include-content__items items-include">
+								<div class="items-include__item">
+									<img src="img/icons/included/icon_flights.svg" alt="Icon">
+								</div>
+								<div class="items-include__item">
+									<img src="img/icons/included/icon_transfer.svg" alt="Icon">
+								</div>
+								<div class="items-include__item">
+									<img src="img/icons/included/icon_skipass.svg" alt="Icon">
 								</div>
 							</div>
-							<a href="" class="total-card-accommodation__continue button button--fw button--main"><span>Continue</span></a>
 						</div>
+						<a href="" class="total-card-accommodation__continue button button--fw button--main"><span>Continue</span></a>
 					</div>
 				</div>
 
-			</section>
-			<section class="rooms">
-				<div class="rooms__container">
-					<h3 class="rooms__title title title--small">Rooms</h3>
-					<div class="rooms__items">
-						<div class="rooms__item item-rooms">
-							<div class="item-rooms__image">
-								<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-							</div>
-							<div class="item-rooms__body">
-								<div class="item-rooms__header">
-									<p class="item-rooms__name">2x Superior Triple Room</p>
-									<div class="item-rooms__overview overview--item-rooms">
-										<div class="overview--item-rooms__content">
-											<div class="overview-body-accommodation__item item-overview item-overview--guests">
-												<p class="item-overview__text">Up to 2 guests</p>
-											</div>
-											<div class="overview-body-accommodation__item item-overview item-overview--size">
-												<p class="item-overview__text">35m2</p>
-											</div>
-										</div>
-										<a href="#" data-popup="#popup-room" class="overview--item-rooms__more"><span>More details</span></a>
-									</div>
-
-								</div>
-								<div class="item-rooms__services">
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Room only
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Breakfast included
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Breakfast + Dinner
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-								</div>
-								<div class="item-rooms__footer">
-									<div class="item-rooms__price price-total-card-accommodation">
-										<div class="price-accommodation__value">
-											<p>US$ <span>399</span></p>
-										</div>
-										<div class="price-accommodation__info">
-											<p>per people</p>
-										</div>
-									</div>
-									<button class="item-rooms__button button button--main"><span>Select</span></button>
-								</div>
-							</div>
-						</div>
-						<div class="rooms__item item-rooms">
-							<div class="item-rooms__image">
-								<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-							</div>
-							<div class="item-rooms__body">
-								<div class="item-rooms__header">
-									<p class="item-rooms__name">2x Superior Triple Room</p>
-									<div class="item-rooms__overview overview--item-rooms">
-										<div class="overview--item-rooms__content">
-											<div class="overview-body-accommodation__item item-overview item-overview--guests">
-												<p class="item-overview__text">Up to 2 guests</p>
-											</div>
-											<div class="overview-body-accommodation__item item-overview item-overview--size">
-												<p class="item-overview__text">35m2</p>
-											</div>
-										</div>
-										<a href="#" data-popup="#popup-room" class="overview--item-rooms__more"><span>More details</span></a>
-									</div>
-
-								</div>
-								<div class="item-rooms__services">
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Room only
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Breakfast included
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Breakfast + Dinner
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-								</div>
-								<div class="item-rooms__footer">
-									<div class="item-rooms__price price-total-card-accommodation">
-										<div class="price-accommodation__value">
-											<p>US$ <span>399</span></p>
-										</div>
-										<div class="price-accommodation__info">
-											<p>per people</p>
-										</div>
-									</div>
-									<button class="item-rooms__button button button--main"><span>Select</span></button>
-								</div>
-							</div>
-						</div>
-						<div class="rooms__item item-rooms">
-							<div class="item-rooms__image">
-								<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-							</div>
-							<div class="item-rooms__body">
-								<div class="item-rooms__header">
-									<p class="item-rooms__name">2x Superior Triple Room</p>
-									<div class="item-rooms__overview overview--item-rooms">
-										<div class="overview--item-rooms__content">
-											<div class="overview-body-accommodation__item item-overview item-overview--guests">
-												<p class="item-overview__text">Up to 2 guests</p>
-											</div>
-											<div class="overview-body-accommodation__item item-overview item-overview--size">
-												<p class="item-overview__text">35m2</p>
-											</div>
-										</div>
-										<a href="#" data-popup="#popup-room" class="overview--item-rooms__more"><span>More details</span></a>
-									</div>
-
-								</div>
-								<div class="item-rooms__services">
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Room only
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Breakfast included
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Breakfast + Dinner
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-								</div>
-								<div class="item-rooms__footer">
-									<div class="item-rooms__price price-total-card-accommodation">
-										<div class="price-accommodation__value">
-											<p>US$ <span>399</span></p>
-										</div>
-										<div class="price-accommodation__info">
-											<p>per people</p>
-										</div>
-									</div>
-									<button class="item-rooms__button button button--main"><span>Select</span></button>
-								</div>
-							</div>
-						</div>
-						<div class="rooms__item item-rooms">
-							<div class="item-rooms__image">
-								<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-							</div>
-							<div class="item-rooms__body">
-								<div class="item-rooms__header">
-									<p class="item-rooms__name">2x Superior Triple Room</p>
-									<div class="item-rooms__overview overview--item-rooms">
-										<div class="overview--item-rooms__content">
-											<div class="overview-body-accommodation__item item-overview item-overview--guests">
-												<p class="item-overview__text">Up to 2 guests</p>
-											</div>
-											<div class="overview-body-accommodation__item item-overview item-overview--size">
-												<p class="item-overview__text">35m2</p>
-											</div>
-										</div>
-										<a href="#" data-popup="#popup-room" class="overview--item-rooms__more"><span>More details</span></a>
-									</div>
-
-								</div>
-								<div class="item-rooms__services">
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Room only
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Breakfast included
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Breakfast + Dinner
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-								</div>
-								<div class="item-rooms__footer">
-									<div class="item-rooms__price price-total-card-accommodation">
-										<div class="price-accommodation__value">
-											<p>US$ <span>399</span></p>
-										</div>
-										<div class="price-accommodation__info">
-											<p>per people</p>
-										</div>
-									</div>
-									<button class="item-rooms__button button button--main"><span>Select</span></button>
-								</div>
-							</div>
-						</div>
-						<div class="rooms__item item-rooms">
-							<div class="item-rooms__image">
-								<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-							</div>
-							<div class="item-rooms__body">
-								<div class="item-rooms__header">
-									<p class="item-rooms__name">2x Superior Triple Room</p>
-									<div class="item-rooms__overview overview--item-rooms">
-										<div class="overview--item-rooms__content">
-											<div class="overview-body-accommodation__item item-overview item-overview--guests">
-												<p class="item-overview__text">Up to 2 guests</p>
-											</div>
-											<div class="overview-body-accommodation__item item-overview item-overview--size">
-												<p class="item-overview__text">35m2</p>
-											</div>
-										</div>
-										<a href="#" data-popup="#popup-room" class="overview--item-rooms__more"><span>More details</span></a>
-									</div>
-
-								</div>
-								<div class="item-rooms__services">
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Room only
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Breakfast included
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Breakfast + Dinner
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-								</div>
-								<div class="item-rooms__footer">
-									<div class="item-rooms__price price-total-card-accommodation">
-										<div class="price-accommodation__value">
-											<p>US$ <span>399</span></p>
-										</div>
-										<div class="price-accommodation__info">
-											<p>per people</p>
-										</div>
-									</div>
-									<button class="item-rooms__button button button--main"><span>Select</span></button>
-								</div>
-							</div>
-						</div>
-						<div class="rooms__item item-rooms">
-							<div class="item-rooms__image">
-								<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-							</div>
-							<div class="item-rooms__body">
-								<div class="item-rooms__header">
-									<p class="item-rooms__name">2x Superior Triple Room</p>
-									<div class="item-rooms__overview overview--item-rooms">
-										<div class="overview--item-rooms__content">
-											<div class="overview-body-accommodation__item item-overview item-overview--guests">
-												<p class="item-overview__text">Up to 2 guests</p>
-											</div>
-											<div class="overview-body-accommodation__item item-overview item-overview--size">
-												<p class="item-overview__text">35m2</p>
-											</div>
-										</div>
-										<a href="#" data-popup="#popup-room" class="overview--item-rooms__more"><span>More details</span></a>
-									</div>
-
-								</div>
-								<div class="item-rooms__services">
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Room only
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Breakfast included
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-									<div class="item-rooms__service service-item-rooms">
-										<label class="service-item-rooms__type">
-											<p>
-												Breakfast + Dinner
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="service-item-rooms__price">+<span>0</span>$</div>
-									</div>
-								</div>
-								<div class="item-rooms__footer">
-									<div class="item-rooms__price price-total-card-accommodation">
-										<div class="price-accommodation__value">
-											<p>US$ <span>399</span></p>
-										</div>
-										<div class="price-accommodation__info">
-											<p>per people</p>
-										</div>
-									</div>
-									<button class="item-rooms__button button button--main"><span>Select</span></button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="amenities">
-				<div class="amenities__container">
-					<h3 class="amenities__title title title--small">Hotel amenities</h3>
-					<div data-showmore="items" class="amenities-body">
-						<div data-showmore-content="1" class="amenities__content">
-							<div class="amenities__item item-amenities item-amenities--pool">
-								<p class="item-amenities__text">Indoor pool</p>
-							</div>
-							<div class="amenities__item item-amenities item-amenities--ski">
-								<p class="item-amenities__text">Ski-in / Ski-out</p>
-							</div>
-							<div class="amenities__item item-amenities item-amenities--wifi">
-								<p class="item-amenities__text">Free Wi-Fi</p>
-							</div>
-							<div class="amenities__item item-amenities item-amenities--bar">
-								<p class="item-amenities__text">Bar</p>
-							</div>
-							<div class="amenities__item item-amenities item-amenities--pool">
-								<p class="item-amenities__text">Indoor pool</p>
-							</div>
-							<div class="amenities__item item-amenities item-amenities--ski">
-								<p class="item-amenities__text">Ski-in / Ski-out</p>
-							</div>
-							<div class="amenities__item item-amenities item-amenities--wifi">
-								<p class="item-amenities__text">Free Wi-Fi</p>
-							</div>
-							<div class="amenities__item item-amenities item-amenities--bar">
-								<p class="item-amenities__text">Bar</p>
-							</div>
-
-						</div>
-						<button hidden data-showmore-button type="button" class="amenities__more">
-							<span>Show more</span>
-							<span>Show less</span>
-						</button>
-					</div>
-
-				</div>
-			</section>
-			<section class="location">
-				<div class="location__container">
-					<div class="location__header">
-						<h3 class="location__title title title--small">Location</h3>
-						<p class="location__text">5487 Boyle Street, Makati, Manila, Philippines, 1235</p>
-					</div>
-					<div class="location__content">
-						<div class="location__block location__block--airports">
-							<div class="location__title">Airports</div>
-							<div class="location__item">
-								<p class="item-location__text">Ninoy Aquino International Airport (MNL)</p>
-								<div class="item-location__distance">6.0 km</div>
-							</div>
-						</div>
-						<div class="location__block location__block--lift">
-							<div class="location__title">Ski lift</div>
-							<div class="location__item">
-								<p class="item-location__text">South lift</p>
-								<div class="item-location__distance">120 m</div>
-							</div>
-							<div class="location__item">
-								<p class="item-location__text">South lift</p>
-								<div class="item-location__distance">120 m</div>
-							</div>
-						</div>
-						<div class="location__block location__block--equipment">
-							<div class="location__title">Equipment shop</div>
-							<div class="location__item">
-								<p class="item-location__text">Ski-mart</p>
-								<div class="item-location__distance">33 m</div>
-							</div>
-						</div>
-						<div class="location__block location__block--cash">
-							<div class="location__title">Cash withdrawal</div>
-							<div class="location__item">
-								<p class="item-location__text">ATM</p>
-								<div class="item-location__distance">100 m</div>
-							</div>
-						</div>
-						<div class="location__block location__block--groceries">
-							<div class="location__title">Groceries</div>
-							<div class="location__item">
-								<p class="item-location__text">7 Eleven</p>
-								<div class="item-location__distance">130 m</div>
-							</div>
-						</div>
-						<div class="location__block location__block--cafe">
-							<div class="location__title">Cafe</div>
-							<div class="location__item">
-								<p class="item-location__text">Robinsons Garlic</p>
-								<div class="item-location__distance">200 m</div>
-							</div>
-							<div class="location__item">
-								<p class="item-location__text">Fernando coffee-shop</p>
-								<div class="item-location__distance">60 m</div>
-							</div>
-						</div>
-						<div class="location__block location__block--hospital">
-							<div class="location__title">Hospital or clinic</div>
-							<div class="location__item">
-								<p class="item-location__text">San Antonio Clinic</p>
-								<div class="item-location__distance">170 m</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="info">
-				<div class="info__container">
-					<div class="info__content content-info">
-						<h3 class="content-info__title title title--small">Things to know</h3>
-						<div class="content-info__items">
-							<div class="content-info__item item-content-info item-content-info--pets">
-								<p class="item-content-info__text">Pets allowed</p>
-							</div>
-							<div class="content-info__item item-content-info item-content-info--smoke">
-								<p class="item-content-info__text">Smoke not allowed</p>
-							</div>
-							<div class="content-info__item item-content-info item-content-info--age">
-								<p class="item-content-info__text">Minimum check-in age is 18 years old</p>
-							</div>
-						</div>
-					</div>
-					<div class="info__check-in check-in-info">
-						<h4 class="check-in-info__title">Check in & out</h4>
-						<div class="check-in-info__content">
-							<p class="check-in-info__arrival">Check-in: <span>4.00 PM</span> - <span>8.00 PM</span></p>
-							<p class="check-in-info__departure">Check-out: before <span>11:00 AM</span></p>
-						</div>
-					</div>
-					<div class="info__important important-info">
-						<h4 class="important-info__title">Important info</h4>
-						<p class="important-info__text">To make arrangements for check-in please contact the property ahead of time using the information on the booking confirmation. If you are planning to arrive after midnight please contact the property in advance using the information on the booking confirmation Guests must contact the property in advance for check-in instructions. Front desk staff will greet guests on arrival,</p>
-						<p class="important-info__text">Extra-person charges may apply and vary depending on property policy</p>
-						<p class="important-info__text">Government-issued photo identification and a credit card, debit card, or cash deposit may be required at check-in for incidental charges</p>
-						<p class="important-info__text">Special requests are subject to availability upon check-in and may incur additional charges: special requests cannot be guaranteed</p>
-						<p class="important-info__text">Guests must contact this property in advance to reserve cribs/infant beds and rollaway/extra beds</p>
-						<p class="important-info__text">This property accepts credit cards; cash is not accepted</p>
-						<p class="important-info__text">Safety features at this property include a smoke detector</p>
-						<p class="important-info__text">Please note that cultural norms and guest policies may differ by country and by property; the policies listed are provided by the property</p>
-					</div>
-
-				</div>
 			</section>
 		</main>
 		<footer class="footer">
@@ -1843,161 +1823,6 @@
 
 		</div>
 
-	</div>
-	<div id="popup-room" aria-hidden="true" class="popup-room popup">
-		<div class="popup-room__wrapper popup__wrapper">
-			<div class="popup-room__content popup__content">
-				<div class="popup__navigation">
-					<p class="popup__name">Standard Double Room</p>
-					<button data-close type="button" class="popup__close"></button>
-				</div>
-				<div class="popup-room__body body-popup-room">
-					<div class="body-popup-room__gallery gallery-popup-room">
-						<div class="gallery-popup-room__slider swiper">
-							<div data-gallery class="gallery-popup-room__wrapper swiper-wrapper">
-								<a href="img/Accommodation/rooms/01.jpg" class="gallery-popup-room__slide swiper-slide gallery__image">
-									<picture><source srcset="img/Accommodation/rooms/01.webp" type="image/webp"><img alt="Image" src="img/Accommodation/rooms/01.jpg" class="ibg gallery__preview"></picture>
-								</a>
-								<a href="img/Accommodation/rooms/01.jpg" class="gallery-popup-room__slide swiper-slide gallery__image">
-									<picture><source srcset="img/Accommodation/rooms/01.webp" type="image/webp"><img alt="Image" src="img/Accommodation/rooms/01.jpg" class="ibg gallery__preview"></picture>
-								</a>
-								<a href="img/Accommodation/rooms/01.jpg" class="gallery-popup-room__slide swiper-slide gallery__image">
-									<picture><source srcset="img/Accommodation/rooms/01.webp" type="image/webp"><img alt="Image" src="img/Accommodation/rooms/01.jpg" class="ibg gallery__preview"></picture>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="body-popup-room__overview">
-						<div class="body-accommodation__overview overview-body-accommodation">
-							<h3 class="overview-body-accommodation__title title title--small">Overview</h3>
-							<div class="overview-body-accommodation__items">
-								<div class="overview-body-accommodation__item item-overview item-overview--guests">
-									<p class="item-overview__text">Up to 2 guests</p>
-								</div>
-								<div class="overview-body-accommodation__item item-overview item-overview--bedroom">
-									<p class="item-overview__text">1 bedroom</p>
-								</div>
-								<div class="overview-body-accommodation__item item-overview item-overview--size">
-									<p class="item-overview__text">35m2</p>
-								</div>
-								<div class="overview-body-accommodation__item item-overview item-overview--bed">
-									<p class="item-overview__text">1 double bed</p>
-								</div>
-								<div class="overview-body-accommodation__item item-overview item-overview--bathroom">
-									<p class="item-overview__text">1 bathroom</p>
-								</div>
-								<div class="overview-body-accommodation__item item-overview item-overview--view">
-									<p class="item-overview__text">Mountain view</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="body-popup-room__amenities amenities-body-popup-room">
-						<div class="amenities-body-popup-room__items">
-							<div class="amenities-body-popup-room__item">
-								<p class="amenities-body-popup-room__text">General</p>
-								<ul class="amenities-body-popup-room__list">
-									<li>Fan</li>
-									<li>Fan</li>
-									<li>Fan</li>
-									<li>Fan</li>
-									<li>Fan</li>
-								</ul>
-							</div>
-							<div class="amenities-body-popup-room__item">
-								<p class="amenities-body-popup-room__text">General</p>
-								<ul class="amenities-body-popup-room__list">
-									<li>Fan</li>
-									<li>Fan</li>
-									<li>Fan</li>
-									<li>Fan</li>
-									<li>Fan</li>
-								</ul>
-							</div>
-							<div class="amenities-body-popup-room__item">
-								<p class="amenities-body-popup-room__text">General</p>
-								<ul class="amenities-body-popup-room__list">
-									<li>24-hour security</li>
-									<li>Fan</li>
-									<li>24-hour security</li>
-									<li>Fan</li>
-									<li>Fan</li>
-								</ul>
-							</div>
-							<div class="amenities-body-popup-room__item">
-								<p class="amenities-body-popup-room__text">General</p>
-								<ul class="amenities-body-popup-room__list">
-									<li>24-hour security</li>
-									<li>Fan</li>
-									<li>24-hour security</li>
-									<li>Fan</li>
-									<li>Fan</li>
-								</ul>
-							</div>
-							<div class="amenities-body-popup-room__item">
-								<p class="amenities-body-popup-room__text">General</p>
-								<ul class="amenities-body-popup-room__list">
-									<li>Fan</li>
-									<li>Fan</li>
-									<li>Fan</li>
-									<li>Fan</li>
-									<li>Fan</li>
-								</ul>
-							</div>
-							<div class="amenities-body-popup-room__item">
-								<p class="amenities-body-popup-room__text">General</p>
-								<ul class="amenities-body-popup-room__list">
-									<li>Fan</li>
-									<li>Fan</li>
-									<li>Fan</li>
-									<li>Fan</li>
-									<li>Fan</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="body-popup-room__description">
-						<h3 class="description-body-accommodation__title title title--small">Description</h3>
-						<div class="description-body-accommodation__text">
-							<div class="description-body-accommodation__content">
-								<p>Located at 1860 m, in the heart of lAlpe dHuez, known for its exceptional sunshine, the 5* Daria-I Nor residences, part of Les Etincelles collection, offer wonderful accommodation with premium services in any of the 48 apartments suited for 2 to 10 guests and equipped with all the modern comforts to share convivial moments with your nearest and dearest.</p>
-							</div>
-						</div>
-					</div>
-					<div class="body-popup-room__footer">
-						<div class="total-card-accommodation__price price-total-card-accommodation">
-							<div class="price-accommodation__value">
-								<p>US$ <span>399</span></p>
-							</div>
-							<div class="price-accommodation__info">
-								<p>per adult for 6 nights</p>
-							</div>
-						</div>
-						<div class="total-card-accommodation__includes include-total-card-accommodation">
-							<div class="include-total-card-accommodation__text">Price includes:</div>
-							<div class="include-total-card-accommodation__items">
-								<div class="include-total-card-accommodation__item flights">
-									<p class="include-total-card-accommodation__text">Flights</p>
-								</div>
-								<div class="include-total-card-accommodation__item stay">
-									<p class="include-total-card-accommodation__text">Stay</p>
-								</div>
-								<div class="include-total-card-accommodation__item transfer">
-									<p class="include-total-card-accommodation__text">Transfer</p>
-								</div>
-								<div class="include-total-card-accommodation__item gear">
-									<p class="include-total-card-accommodation__text">Rental gear</p>
-								</div>
-								<div class="include-total-card-accommodation__item pass">
-									<p class="include-total-card-accommodation__text">Ski pass</p>
-								</div>
-							</div>
-						</div>
-						<button class="total-card-accommodation__continue button button--fw button--main"><span>Select this room</span></button>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 
 	<script src="js/app.min.js?_v=20240328152440"></script>
