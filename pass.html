@@ -723,854 +723,230 @@
 			</div>
 		</header>
 
-		<main class="page page-trip">
-			<section class="trip-main">
-				<div class="trip-main__container">
-					<aside class="trip-main__filters filters-trip">
-						<div data-spollers="767.98,max" class="filters-trip__items">
-							<details class="filters-trip__item trip-filter accommodation">
-								<summary class="trip-filter__text">Accommodation type</summary>
-								<div class="trip-filter__items filter-items">
-									<div class="filter-items__item item-filter hotel">
-										<label class="item-filter__type">
-											<p>
-												Hotel
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="item-filter__number">6</div>
-									</div>
-									<div class="filter-items__item item-filter chalet">
-										<label class="item-filter__type">
-											<p>
-												Chalet
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="item-filter__number">3</div>
-									</div>
-								</div>
-							</details>
-							<details class="filters-trip__item trip-filter price">
-								<summary class="trip-filter__text">Price</summary>
-								<div class="trip-filter__items filter-items">
-									<div class="trip-filter__range range">
-										<div class="range__value">
-											<div id="price-start" class="range__price-start"></div>
-											-
-											<div id="price-end" class="range__price-end"></div>
-										</div>
-										<div class="range__line" id="price"></div>
-									</div>
-								</div>
+		<main class="page page-pass">
+			<div class="page__navigation">
+				<div class="page__container">
+					<nav class="page__breadcrumbs breadcrumbs">
+						<div class="breadcrumbs__list">
+							<a href="hotel-page.html" class="breadcrumbs__item breadcrumbs-stay breadcrumbs__item--active">
+								<p class="breadcrumbs__text _icon-stay">Stay</p>
+							</a>
+							<a href="flight.html" class="breadcrumbs__item breadcrumbs-flight breadcrumbs__item--active">
+								<p class="breadcrumbs__text _icon-flights">Flight</p>
+							</a>
+							<a href="transfer.html" class="breadcrumbs__item breadcrumbs-transfer breadcrumbs__item--active">
+								<p class="breadcrumbs__text _icon-transfer">Transfer</p>
+							</a>
+							<div class="breadcrumbs__item breadcrumbs-pass">
+								<p class="breadcrumbs__text _icon-pass">Ski pass</p>
+							</div>
 
-							</details>
-							<details class="filters-trip__item trip-filter popular">
-								<summary class="trip-filter__text">Popular filters</summary>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<section class="pass-main">
+				<div class="pass-main__container">
+					<aside class="pass-main__filters filters-trip">
+						<div data-spollers="991.98,max" class="filters-trip__items">
+							<details class="filters-trip__item trip-filter pass-type">
+								<summary class="trip-filter__text">Ski pass type</summary>
 								<div class="trip-filter__items filter-items">
-									<div class="filter-items__item item-filter hotel">
+									<div class="filter-items__item item-filter">
 										<label class="item-filter__type">
 											<p>
-												Hotel
+												Basic
 											</p>
 											<input type="checkbox" name="stay" id="" class="real-checkbox">
 											<span class="custom-checkbox"></span>
 										</label>
-										<div class="item-filter__number">6</div>
+										<div class="item-filter__number"></div>
 									</div>
-									<div class="filter-items__item item-filter chalet">
+									<div class="filter-items__item item-filter">
 										<label class="item-filter__type">
 											<p>
-												Chalet
+												Something else
 											</p>
 											<input type="checkbox" name="stay" id="" class="real-checkbox">
 											<span class="custom-checkbox"></span>
 										</label>
-										<div class="item-filter__number">3</div>
+										<div class="item-filter__number"></div>
 									</div>
-									<div class="filter-items__item item-filter france">
+									<div class="filter-items__item item-filter">
 										<label class="item-filter__type">
 											<p>
-												France
+												Something else
 											</p>
 											<input type="checkbox" name="stay" id="" class="real-checkbox">
 											<span class="custom-checkbox"></span>
 										</label>
-										<div class="item-filter__number">21</div>
-									</div>
-									<div class="filter-items__item item-filter breakfast">
-										<label class="item-filter__type">
-											<p>
-												Breakfast included
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="item-filter__number">14</div>
-									</div>
-									<div class="filter-items__item item-filter ski">
-										<label class="item-filter__type">
-											<p>
-												Ski in / ski out
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="item-filter__number">9</div>
-									</div>
-									<div class="filter-items__item item-filter dinner">
-										<label class="item-filter__type">
-											<p>
-												Dinner included
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="item-filter__number">7</div>
-									</div>
-								</div>
-							</details>
-							<details class="filters-trip__item trip-filter meals">
-								<summary class="trip-filter__text">Meals filters</summary>
-								<div class="trip-filter__items filter-items">
-									<div class="filter-items__item item-filter breakfast">
-										<label class="item-filter__type">
-											<p>
-												Breakfast included
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="item-filter__number">14</div>
-									</div>
-									<div class="filter-items__item item-filter breakfast-dinner">
-										<label class="item-filter__type">
-											<p>
-												Breakfast & dinner included
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="item-filter__number">7</div>
-									</div>
-									<div class="filter-items__item item-filter dinner">
-										<label class="item-filter__type">
-											<p>
-												Dinner included
-											</p>
-											<input type="checkbox" name="stay" id="" class="real-checkbox">
-											<span class="custom-checkbox"></span>
-										</label>
-										<div class="item-filter__number">7</div>
+										<div class="item-filter__number"></div>
 									</div>
 								</div>
 							</details>
 						</div>
 					</aside>
-					<div class="trip-main__body">
-						<div class="trip-main__header header-trip-main">
-							<div class="header-trip-main__body">
-								<div class="header-trip-main__wrapper">
-									<h1 class="header-trip-main__title title">Showing 53 out of 53 trip options</h1>
-
-								</div>
-								<div class="header-trip-main__include include-trips">
-									<p class="include-trips__text">All trips include:</p>
-									<p class="include-trips__items">Stay + Flights + Transfers + Ski pass</p>
-								</div>
-							</div>
-							<button data-da=".header-trip-main__wrapper,767.98" class="header-trip-main__sort"><span>Sort</span></button>
+					<div class="pass-main__body body-pass-main">
+						<div class="body-pass-main__header">
+							<h1 class="body-pass-main__title title">Choose your ski pass</h1>
+							<!-- <button class="header-trip-main__sort"><span>By price</span></button> -->
 						</div>
-						<div class="trip-main__content">
-							<div class="trip-main__items">
-								<div class="trip-main__item item-accommodation">
-									<div class="item-accommodation__slider swiper">
-
-										<div class="item-accommodation__wrapper swiper-wrapper">
-
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/02.webp" type="image/webp"><img class="ibg" src="img/Accommodation/02.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/02.webp" type="image/webp"><img class="ibg" src="img/Accommodation/02.jpg" alt="Image"></picture>
-												</a>
-											</div>
-										</div>
-										<div class="item-accommodation__rating">
-											<div class="item-accommodation__value value-rating">4.7</div>
-										</div>
-
-										<div class="item-accommodation__pagination"></div>
-										<div class="item-accommodation__arrows">
-											<button type="button" class="item-accommodation__arrow item-accommodation__arrow-prev"></button>
-											<button type="button" class="item-accommodation__arrow item-accommodation__arrow-next"></button>
-										</div>
-
+						<div class="body-pass-main__content">
+							<div class="body-pass-main__items">
+								<div class="body-pass-main__item item-pass">
+									<div class="item-pass__header header-item-pass">
+										<div class="header-item-pass__name">Ski pass - Tignes and Val d'lsere</div>
+										<p class="header-item-pass__text">300km of runs</p>
 									</div>
-
-									<div class="item-accommodation__block">
-										<div class="item-accommodation__body body-item-accommodation">
-											<div class="body-item-accommodation__type">
-												<p>Hotel</p>
+									<div class="item-pass__body body-item-pass">
+										<div class="body-item-pass__items">
+											<div class="body-item-pass__item item-body-item-pass item-body-item-pass--beginner">
+												<span class="item-body-item-pass__line"></span>
+												<p class="item-body-item-pass__text">Beginner</p>
+												<p class="item-body-item-pass__slopes">22 slopes</p>
 											</div>
-											<h3 class="body-item-accommodation__title title title--small"><a href="">Résidence Pierre & Vacances Premium Les Fermes Du Soleil</a></h3>
-											<div class="body-item-accommodation__location">
-												<p>Ciutat Vella, Barcelona</p>
+											<div class="body-item-pass__item item-body-item-pass item-body-item-pass--intermediate">
+												<span class="item-body-item-pass__line"></span>
+												<p class="item-body-item-pass__text">Intermediate</p>
+												<p class="item-body-item-pass__slopes">65 slopes</p>
 											</div>
-										</div>
-
-										<div class="item-accommodation__info info-item-accommodation">
-											<div class="info-item-accommodation__ski">
-												<p>0.2 km from ski</p>
+											<div class="body-item-pass__item item-body-item-pass item-body-item-pass--advanced">
+												<span class="item-body-item-pass__line"></span>
+												<p class="item-body-item-pass__text">Advanced</p>
+												<p class="item-body-item-pass__slopes">44 slopes</p>
 											</div>
-											<div class="info-item-accommodation__include include-accommodation">
-												<div class="include-accommodation__text">
-													<p>Price includes:</p>
-												</div>
-												<div class="include-accommodation__items items-include">
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_flights.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_transfer.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_skipass.svg" alt="Icon">
-													</div>
-												</div>
-												<div class="include-accommodation__content">
-													<p>Flights + Ski pass + Transfers</p>
-												</div>
+											<div class="body-item-pass__item item-body-item-pass item-body-item-pass--expert">
+												<span class="item-body-item-pass__line"></span>
+												<p class="item-body-item-pass__text">Expert</p>
+												<p class="item-body-item-pass__slopes">25 slopes</p>
 											</div>
 										</div>
 									</div>
-									<div class="item-accommodation__content content-item-accommodation">
-										<div class="content-item-accommodation__rating">
-											<div class="rating-accommodation">
-												<div class="rating-accommodation__body">
-													<div class="rating-accommodation__overall-rating">
-														<p>Ordinary</p>
-													</div>
-													<div class="rating-accommodation__reviews">
-														<p>2045 reviews</p>
-													</div>
-												</div>
-												<div class="rating-accommodation__value value-rating">4.7</div>
-											</div>
-										</div>
-										<div class="content-item-accommodation__body">
-											<div class="content-item-accommodation__price price-accommodation">
-												<div class="price-accommodation__value">
-													<p>US$ <span>399</span></p>
-												</div>
-												<div class="price-accommodation__info">
-													<p>per adult for 6 nights</p>
-												</div>
-											</div>
-											<div class="content-item-accommodation__include include-content">
-												<div class="include-content__items items-include">
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_flights.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_transfer.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_skipass.svg" alt="Icon">
-													</div>
-												</div>
-											</div>
-											<a href="" class="content-item-accommodation__button button button--main"><span>View trip</span></a>
-										</div>
+									<div class="item-pass__footer footer-item-pass">
+										<p class="footer-item-pass__text">Valid for 6 days, excl. arrival and departure days</p>
 									</div>
 								</div>
-								<div class="trip-main__item item-accommodation">
-									<div class="item-accommodation__slider swiper">
-
-										<div class="item-accommodation__wrapper swiper-wrapper">
-
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/02.webp" type="image/webp"><img class="ibg" src="img/Accommodation/02.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/02.webp" type="image/webp"><img class="ibg" src="img/Accommodation/02.jpg" alt="Image"></picture>
-												</a>
-											</div>
-										</div>
-										<div class="item-accommodation__rating">
-											<div class="item-accommodation__value value-rating">4.7</div>
-										</div>
-
-										<div class="item-accommodation__pagination"></div>
-										<div class="item-accommodation__arrows">
-											<button type="button" class="item-accommodation__arrow item-accommodation__arrow-prev"></button>
-											<button type="button" class="item-accommodation__arrow item-accommodation__arrow-next"></button>
-										</div>
-
+								<div class="body-pass-main__item item-pass">
+									<div class="item-pass__header header-item-pass">
+										<div class="header-item-pass__name">Ski pass - Tignes and Val d'lsere</div>
+										<p class="header-item-pass__text">300km of runs</p>
 									</div>
-
-									<div class="item-accommodation__block">
-										<div class="item-accommodation__body body-item-accommodation">
-											<div class="body-item-accommodation__type">
-												<p>Hotel</p>
+									<div class="item-pass__body body-item-pass">
+										<div class="body-item-pass__items">
+											<div class="body-item-pass__item item-body-item-pass item-body-item-pass--beginner">
+												<span class="item-body-item-pass__line"></span>
+												<p class="item-body-item-pass__text">Beginner</p>
+												<p class="item-body-item-pass__slopes">22 slopes</p>
 											</div>
-											<h3 class="body-item-accommodation__title title title--small"><a href="">Résidence Pierre & Vacances Premium Les Fermes Du Soleil</a></h3>
-											<div class="body-item-accommodation__location">
-												<p>Ciutat Vella, Barcelona</p>
+											<div class="body-item-pass__item item-body-item-pass item-body-item-pass--intermediate">
+												<span class="item-body-item-pass__line"></span>
+												<p class="item-body-item-pass__text">Intermediate</p>
+												<p class="item-body-item-pass__slopes">65 slopes</p>
 											</div>
-										</div>
-
-										<div class="item-accommodation__info info-item-accommodation">
-											<div class="info-item-accommodation__ski">
-												<p>0.2 km from ski</p>
+											<div class="body-item-pass__item item-body-item-pass item-body-item-pass--advanced">
+												<span class="item-body-item-pass__line"></span>
+												<p class="item-body-item-pass__text">Advanced</p>
+												<p class="item-body-item-pass__slopes">44 slopes</p>
 											</div>
-											<div class="info-item-accommodation__include include-accommodation">
-												<div class="include-accommodation__text">
-													<p>Price includes:</p>
-												</div>
-												<div class="include-accommodation__items items-include">
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_flights.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_transfer.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_skipass.svg" alt="Icon">
-													</div>
-												</div>
-												<div class="include-accommodation__content">
-													<p>Flights + Ski pass + Transfers</p>
-												</div>
+											<div class="body-item-pass__item item-body-item-pass item-body-item-pass--expert">
+												<span class="item-body-item-pass__line"></span>
+												<p class="item-body-item-pass__text">Expert</p>
+												<p class="item-body-item-pass__slopes">25 slopes</p>
 											</div>
 										</div>
 									</div>
-									<div class="item-accommodation__content content-item-accommodation">
-										<div class="content-item-accommodation__rating">
-											<div class="rating-accommodation">
-												<div class="rating-accommodation__body">
-													<div class="rating-accommodation__overall-rating">
-														<p>Ordinary</p>
-													</div>
-													<div class="rating-accommodation__reviews">
-														<p>2045 reviews</p>
-													</div>
-												</div>
-												<div class="rating-accommodation__value value-rating">4.7</div>
-											</div>
-										</div>
-										<div class="content-item-accommodation__body">
-											<div class="content-item-accommodation__price price-accommodation">
-												<div class="price-accommodation__value">
-													<p>US$ <span>399</span></p>
-												</div>
-												<div class="price-accommodation__info">
-													<p>per adult for 6 nights</p>
-												</div>
-											</div>
-											<div class="content-item-accommodation__include include-content">
-												<div class="include-content__items items-include">
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_flights.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_transfer.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_skipass.svg" alt="Icon">
-													</div>
-												</div>
-											</div>
-											<a href="" class="content-item-accommodation__button button button--main"><span>View trip</span></a>
-										</div>
+									<div class="item-pass__footer footer-item-pass">
+										<p class="footer-item-pass__text">Valid for 6 days, excl. arrival and departure days</p>
 									</div>
 								</div>
-								<div class="trip-main__item item-accommodation">
-									<div class="item-accommodation__slider swiper">
-
-										<div class="item-accommodation__wrapper swiper-wrapper">
-
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/02.webp" type="image/webp"><img class="ibg" src="img/Accommodation/02.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/02.webp" type="image/webp"><img class="ibg" src="img/Accommodation/02.jpg" alt="Image"></picture>
-												</a>
-											</div>
-										</div>
-										<div class="item-accommodation__rating">
-											<div class="item-accommodation__value value-rating">4.7</div>
-										</div>
-
-										<div class="item-accommodation__pagination"></div>
-										<div class="item-accommodation__arrows">
-											<button type="button" class="item-accommodation__arrow item-accommodation__arrow-prev"></button>
-											<button type="button" class="item-accommodation__arrow item-accommodation__arrow-next"></button>
-										</div>
-
+								<div class="body-pass-main__item item-pass">
+									<div class="item-pass__header header-item-pass">
+										<div class="header-item-pass__name">Ski pass - Tignes and Val d'lsere</div>
+										<p class="header-item-pass__text">300km of runs</p>
 									</div>
-
-									<div class="item-accommodation__block">
-										<div class="item-accommodation__body body-item-accommodation">
-											<div class="body-item-accommodation__type">
-												<p>Hotel</p>
+									<div class="item-pass__body body-item-pass">
+										<div class="body-item-pass__items">
+											<div class="body-item-pass__item item-body-item-pass item-body-item-pass--beginner">
+												<span class="item-body-item-pass__line"></span>
+												<p class="item-body-item-pass__text">Beginner</p>
+												<p class="item-body-item-pass__slopes">22 slopes</p>
 											</div>
-											<h3 class="body-item-accommodation__title title title--small"><a href="">Résidence Pierre & Vacances Premium Les Fermes Du Soleil</a></h3>
-											<div class="body-item-accommodation__location">
-												<p>Ciutat Vella, Barcelona</p>
+											<div class="body-item-pass__item item-body-item-pass item-body-item-pass--intermediate">
+												<span class="item-body-item-pass__line"></span>
+												<p class="item-body-item-pass__text">Intermediate</p>
+												<p class="item-body-item-pass__slopes">65 slopes</p>
 											</div>
-										</div>
-
-										<div class="item-accommodation__info info-item-accommodation">
-											<div class="info-item-accommodation__ski">
-												<p>0.2 km from ski</p>
+											<div class="body-item-pass__item item-body-item-pass item-body-item-pass--advanced">
+												<span class="item-body-item-pass__line"></span>
+												<p class="item-body-item-pass__text">Advanced</p>
+												<p class="item-body-item-pass__slopes">44 slopes</p>
 											</div>
-											<div class="info-item-accommodation__include include-accommodation">
-												<div class="include-accommodation__text">
-													<p>Price includes:</p>
-												</div>
-												<div class="include-accommodation__items items-include">
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_flights.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_transfer.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_skipass.svg" alt="Icon">
-													</div>
-												</div>
-												<div class="include-accommodation__content">
-													<p>Flights + Ski pass + Transfers</p>
-												</div>
+											<div class="body-item-pass__item item-body-item-pass item-body-item-pass--expert">
+												<span class="item-body-item-pass__line"></span>
+												<p class="item-body-item-pass__text">Expert</p>
+												<p class="item-body-item-pass__slopes">25 slopes</p>
 											</div>
 										</div>
 									</div>
-									<div class="item-accommodation__content content-item-accommodation">
-										<div class="content-item-accommodation__rating">
-											<div class="rating-accommodation">
-												<div class="rating-accommodation__body">
-													<div class="rating-accommodation__overall-rating">
-														<p>Ordinary</p>
-													</div>
-													<div class="rating-accommodation__reviews">
-														<p>2045 reviews</p>
-													</div>
-												</div>
-												<div class="rating-accommodation__value value-rating">4.7</div>
-											</div>
-										</div>
-										<div class="content-item-accommodation__body">
-											<div class="content-item-accommodation__price price-accommodation">
-												<div class="price-accommodation__value">
-													<p>US$ <span>399</span></p>
-												</div>
-												<div class="price-accommodation__info">
-													<p>per adult for 6 nights</p>
-												</div>
-											</div>
-											<div class="content-item-accommodation__include include-content">
-												<div class="include-content__items items-include">
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_flights.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_transfer.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_skipass.svg" alt="Icon">
-													</div>
-												</div>
-											</div>
-											<a href="" class="content-item-accommodation__button button button--main"><span>View trip</span></a>
-										</div>
-									</div>
-								</div>
-								<div class="trip-main__item item-accommodation">
-									<div class="item-accommodation__slider swiper">
-
-										<div class="item-accommodation__wrapper swiper-wrapper">
-
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/02.webp" type="image/webp"><img class="ibg" src="img/Accommodation/02.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/02.webp" type="image/webp"><img class="ibg" src="img/Accommodation/02.jpg" alt="Image"></picture>
-												</a>
-											</div>
-										</div>
-										<div class="item-accommodation__rating">
-											<div class="item-accommodation__value value-rating">4.7</div>
-										</div>
-
-										<div class="item-accommodation__pagination"></div>
-										<div class="item-accommodation__arrows">
-											<button type="button" class="item-accommodation__arrow item-accommodation__arrow-prev"></button>
-											<button type="button" class="item-accommodation__arrow item-accommodation__arrow-next"></button>
-										</div>
-
-									</div>
-
-									<div class="item-accommodation__block">
-										<div class="item-accommodation__body body-item-accommodation">
-											<div class="body-item-accommodation__type">
-												<p>Hotel</p>
-											</div>
-											<h3 class="body-item-accommodation__title title title--small"><a href="">Résidence Pierre & Vacances Premium Les Fermes Du Soleil</a></h3>
-											<div class="body-item-accommodation__location">
-												<p>Ciutat Vella, Barcelona</p>
-											</div>
-										</div>
-
-										<div class="item-accommodation__info info-item-accommodation">
-											<div class="info-item-accommodation__ski">
-												<p>0.2 km from ski</p>
-											</div>
-											<div class="info-item-accommodation__include include-accommodation">
-												<div class="include-accommodation__text">
-													<p>Price includes:</p>
-												</div>
-												<div class="include-accommodation__items items-include">
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_flights.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_transfer.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_skipass.svg" alt="Icon">
-													</div>
-												</div>
-												<div class="include-accommodation__content">
-													<p>Flights + Ski pass + Transfers</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="item-accommodation__content content-item-accommodation">
-										<div class="content-item-accommodation__rating">
-											<div class="rating-accommodation">
-												<div class="rating-accommodation__body">
-													<div class="rating-accommodation__overall-rating">
-														<p>Ordinary</p>
-													</div>
-													<div class="rating-accommodation__reviews">
-														<p>2045 reviews</p>
-													</div>
-												</div>
-												<div class="rating-accommodation__value value-rating">4.7</div>
-											</div>
-										</div>
-										<div class="content-item-accommodation__body">
-											<div class="content-item-accommodation__price price-accommodation">
-												<div class="price-accommodation__value">
-													<p>US$ <span>399</span></p>
-												</div>
-												<div class="price-accommodation__info">
-													<p>per adult for 6 nights</p>
-												</div>
-											</div>
-											<div class="content-item-accommodation__include include-content">
-												<div class="include-content__items items-include">
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_flights.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_transfer.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_skipass.svg" alt="Icon">
-													</div>
-												</div>
-											</div>
-											<a href="" class="content-item-accommodation__button button button--main"><span>View trip</span></a>
-										</div>
-									</div>
-								</div>
-								<div class="trip-main__item item-accommodation">
-									<div class="item-accommodation__slider swiper">
-
-										<div class="item-accommodation__wrapper swiper-wrapper">
-
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/02.webp" type="image/webp"><img class="ibg" src="img/Accommodation/02.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/02.webp" type="image/webp"><img class="ibg" src="img/Accommodation/02.jpg" alt="Image"></picture>
-												</a>
-											</div>
-										</div>
-										<div class="item-accommodation__rating">
-											<div class="item-accommodation__value value-rating">4.7</div>
-										</div>
-
-										<div class="item-accommodation__pagination"></div>
-										<div class="item-accommodation__arrows">
-											<button type="button" class="item-accommodation__arrow item-accommodation__arrow-prev"></button>
-											<button type="button" class="item-accommodation__arrow item-accommodation__arrow-next"></button>
-										</div>
-
-									</div>
-
-									<div class="item-accommodation__block">
-										<div class="item-accommodation__body body-item-accommodation">
-											<div class="body-item-accommodation__type">
-												<p>Hotel</p>
-											</div>
-											<h3 class="body-item-accommodation__title title title--small"><a href="">Résidence Pierre & Vacances Premium Les Fermes Du Soleil</a></h3>
-											<div class="body-item-accommodation__location">
-												<p>Ciutat Vella, Barcelona</p>
-											</div>
-										</div>
-
-										<div class="item-accommodation__info info-item-accommodation">
-											<div class="info-item-accommodation__ski">
-												<p>0.2 km from ski</p>
-											</div>
-											<div class="info-item-accommodation__include include-accommodation">
-												<div class="include-accommodation__text">
-													<p>Price includes:</p>
-												</div>
-												<div class="include-accommodation__items items-include">
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_flights.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_transfer.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_skipass.svg" alt="Icon">
-													</div>
-												</div>
-												<div class="include-accommodation__content">
-													<p>Flights + Ski pass + Transfers</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="item-accommodation__content content-item-accommodation">
-										<div class="content-item-accommodation__rating">
-											<div class="rating-accommodation">
-												<div class="rating-accommodation__body">
-													<div class="rating-accommodation__overall-rating">
-														<p>Ordinary</p>
-													</div>
-													<div class="rating-accommodation__reviews">
-														<p>2045 reviews</p>
-													</div>
-												</div>
-												<div class="rating-accommodation__value value-rating">4.7</div>
-											</div>
-										</div>
-										<div class="content-item-accommodation__body">
-											<div class="content-item-accommodation__price price-accommodation">
-												<div class="price-accommodation__value">
-													<p>US$ <span>399</span></p>
-												</div>
-												<div class="price-accommodation__info">
-													<p>per adult for 6 nights</p>
-												</div>
-											</div>
-											<div class="content-item-accommodation__include include-content">
-												<div class="include-content__items items-include">
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_flights.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_transfer.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_skipass.svg" alt="Icon">
-													</div>
-												</div>
-											</div>
-											<a href="" class="content-item-accommodation__button button button--main"><span>View trip</span></a>
-										</div>
-									</div>
-								</div>
-								<div class="trip-main__item item-accommodation">
-									<div class="item-accommodation__slider swiper">
-
-										<div class="item-accommodation__wrapper swiper-wrapper">
-
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/02.webp" type="image/webp"><img class="ibg" src="img/Accommodation/02.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/01.webp" type="image/webp"><img class="ibg" src="img/Accommodation/01.jpg" alt="Image"></picture>
-												</a>
-											</div>
-											<div class="item-accommodation__slide swiper-slide">
-												<a class="item-accommodation__image" href="">
-													<picture><source srcset="img/Accommodation/02.webp" type="image/webp"><img class="ibg" src="img/Accommodation/02.jpg" alt="Image"></picture>
-												</a>
-											</div>
-										</div>
-										<div class="item-accommodation__rating">
-											<div class="item-accommodation__value value-rating">4.7</div>
-										</div>
-
-										<div class="item-accommodation__pagination"></div>
-										<div class="item-accommodation__arrows">
-											<button type="button" class="item-accommodation__arrow item-accommodation__arrow-prev"></button>
-											<button type="button" class="item-accommodation__arrow item-accommodation__arrow-next"></button>
-										</div>
-
-									</div>
-
-									<div class="item-accommodation__block">
-										<div class="item-accommodation__body body-item-accommodation">
-											<div class="body-item-accommodation__type">
-												<p>Hotel</p>
-											</div>
-											<h3 class="body-item-accommodation__title title title--small"><a href="">Résidence Pierre & Vacances Premium Les Fermes Du Soleil</a></h3>
-											<div class="body-item-accommodation__location">
-												<p>Ciutat Vella, Barcelona</p>
-											</div>
-										</div>
-
-										<div class="item-accommodation__info info-item-accommodation">
-											<div class="info-item-accommodation__ski">
-												<p>0.2 km from ski</p>
-											</div>
-											<div class="info-item-accommodation__include include-accommodation">
-												<div class="include-accommodation__text">
-													<p>Price includes:</p>
-												</div>
-												<div class="include-accommodation__items items-include">
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_flights.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_transfer.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_skipass.svg" alt="Icon">
-													</div>
-												</div>
-												<div class="include-accommodation__content">
-													<p>Flights + Ski pass + Transfers</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="item-accommodation__content content-item-accommodation">
-										<div class="content-item-accommodation__rating">
-											<div class="rating-accommodation">
-												<div class="rating-accommodation__body">
-													<div class="rating-accommodation__overall-rating">
-														<p>Ordinary</p>
-													</div>
-													<div class="rating-accommodation__reviews">
-														<p>2045 reviews</p>
-													</div>
-												</div>
-												<div class="rating-accommodation__value value-rating">4.7</div>
-											</div>
-										</div>
-										<div class="content-item-accommodation__body">
-											<div class="content-item-accommodation__price price-accommodation">
-												<div class="price-accommodation__value">
-													<p>US$ <span>399</span></p>
-												</div>
-												<div class="price-accommodation__info">
-													<p>per adult for 6 nights</p>
-												</div>
-											</div>
-											<div class="content-item-accommodation__include include-content">
-												<div class="include-content__items items-include">
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_flights.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_transfer.svg" alt="Icon">
-													</div>
-													<div class="items-include__item">
-														<img src="img/icons/included/icon_skipass.svg" alt="Icon">
-													</div>
-												</div>
-											</div>
-											<a href="" class="content-item-accommodation__button button button--main"><span>View trip</span></a>
-										</div>
+									<div class="item-pass__footer footer-item-pass">
+										<p class="footer-item-pass__text">Valid for 6 days, excl. arrival and departure days</p>
 									</div>
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="pass-main__total-card total-card">
+						<div data-spollers class="total-card__items spollers">
+							<details class="total-card__item item-total-card spollers__item">
+								<summary class="item-total-card__title spollers__title">Accommodation</summary>
+								<div class="item-total-card__body body-item-total-card spollers__body">
+									<img src="img/icons/included/icon_stay.svg" alt="Image">
+									<div class="body-item-total-card__content">
+										<p class="body-item-total-card__text apartment">1 bedroom appartment for 4 people x1</p>
+										<p class="body-item-total-card__text included">Breakfast & dinner included</p>
+										<p class="body-item-total-card__text check">Check-in: 2:00 PM - 6:00 PM</p>
+									</div>
+								</div>
+							</details>
+							<details class="total-card__item item-total-card spollers__item">
+								<summary class="item-total-card__title spollers__title">Flights</summary>
+								<div class="item-total-card__body body-item-total-card spollers__body">
+									<div class="body-item-total-card__content">
+										<p class="body-item-total-card__text">1 bedroom appartment for 4 people x1</p>
+									</div>
+								</div>
+							</details>
+							<details class="total-card__item item-total-card spollers__item">
+								<summary class="item-total-card__title spollers__title">Transfers</summary>
+								<div class="item-total-card__body body-item-total-card spollers__body">
+									<div class="body-item-total-card__content">
+										<p class="body-item-total-card__text">1 bedroom appartment for 4 people x1</p>
+									</div>
+								</div>
+							</details>
+						</div>
+						<div class="total-card__footer">
+							<div class="total-card__price total-card-price">
+								<div class="price-accommodation__value">
+									<p>US$ <span>399</span></p>
+								</div>
+								<div class="price-accommodation__info">
+									<p>per one people</p>
+								</div>
+							</div>
+							<div class="include-content__items items-include">
+								<div class="items-include__item">
+									<img src="img/icons/included/icon_flights.svg" alt="Icon">
+								</div>
+								<div class="items-include__item">
+									<img src="img/icons/included/icon_transfer.svg" alt="Icon">
+								</div>
+								<div class="items-include__item">
+									<img src="img/icons/included/icon_skipass.svg" alt="Icon">
+								</div>
+							</div>
+						</div>
+						<a href="" class="total-card-accommodation__continue button button--fw button--main"><span>Continue</span></a>
 					</div>
 				</div>
 

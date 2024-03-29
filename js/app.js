@@ -9371,31 +9371,33 @@ PERFORMANCE OF THIS SOFTWARE.
                 }));
             }));
         }
-        new index_es("#date", {
-            range: true,
-            minDate: new Date,
-            dateFormat: "MMM dd",
-            multipleDatesSeparator: " - ",
-            locale: {
-                days: [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ],
-                daysShort: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
-                daysMin: [ "Su", "Mo", "Tu", "We", "Th", "Fr", "Sa" ],
-                months: [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ],
-                monthsShort: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ],
-                today: "Today",
-                clear: "Clear",
-                dateFormat: "MM/dd/yyyy",
-                timeFormat: "hh:mm aa",
-                firstDay: 1
-            }
-        });
-        var dateOpener = document.getElementById("date-opener");
-        var dateInput = document.getElementById("date");
-        dateOpener.addEventListener("click", (function(event) {
-            event.preventDefault();
-            dateInput.focus();
-        }));
-        new index_es("#date-mobile", {
+        if (document.getElementById("date")) {
+            new index_es("#date", {
+                range: true,
+                minDate: new Date,
+                dateFormat: "MMM dd",
+                multipleDatesSeparator: " - ",
+                locale: {
+                    days: [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ],
+                    daysShort: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ],
+                    daysMin: [ "Su", "Mo", "Tu", "We", "Th", "Fr", "Sa" ],
+                    months: [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ],
+                    monthsShort: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ],
+                    today: "Today",
+                    clear: "Clear",
+                    dateFormat: "MM/dd/yyyy",
+                    timeFormat: "hh:mm aa",
+                    firstDay: 1
+                }
+            });
+            var dateOpener = document.getElementById("date-opener");
+            var dateInput = document.getElementById("date");
+            dateOpener.addEventListener("click", (function(event) {
+                event.preventDefault();
+                dateInput.focus();
+            }));
+        }
+        if (document.getElementById("date-mobile")) new index_es("#date-mobile", {
             range: true,
             inline: true,
             minDate: new Date,
@@ -9414,7 +9416,7 @@ PERFORMANCE OF THIS SOFTWARE.
                 firstDay: 1
             }
         });
-        document.addEventListener("DOMContentLoaded", (function() {
+        if (document.querySelector(".item-popup-guests")) document.addEventListener("DOMContentLoaded", (function() {
             const adultsValue = document.querySelector(".item-popup-guests.adults .item-popup-guests__value");
             const childrenValue = document.querySelector(".item-popup-guests.children .item-popup-guests__value");
             const childrenAgeText = document.querySelector(".age-children__text");
@@ -9442,7 +9444,7 @@ PERFORMANCE OF THIS SOFTWARE.
             function addChildrenAgeItem(age) {
                 const newAgeItem = document.createElement("details");
                 newAgeItem.classList.add("age-children__item", "item-children-age", "spollers__item");
-                newAgeItem.innerHTML = `\n          <summary class="item-children-age__years spollers__title"><p><span>1</span> year</p></summary>\n          <div class="item-children-age__number spollers__body">\n              <button class="item-popup-guests__button minus"></button>\n              <div class="item-popup-guests__value">1</div>\n              <button class="item-popup-guests__button plus"></button>\n          </div>\n      `;
+                newAgeItem.innerHTML = `\n              <summary class="item-children-age__years spollers__title"><p><span>1</span> year</p></summary>\n              <div class="item-children-age__number spollers__body">\n                  <button class="item-popup-guests__button minus"></button>\n                  <div class="item-popup-guests__value">1</div>\n                  <button class="item-popup-guests__button plus"></button>\n              </div>\n          `;
                 childrenAgeItems.appendChild(newAgeItem);
             }
             function removeLastChildrenAgeItem() {
