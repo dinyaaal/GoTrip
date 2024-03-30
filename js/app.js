@@ -9354,26 +9354,24 @@ PERFORMANCE OF THIS SOFTWARE.
                 subMenu.classList.toggle("menu__sub-menu-open");
             }));
         }));
-        const screenWidth = window.innerWidth;
-        if (screenWidth >= 479.98) {
-            const allFields = document.querySelectorAll(".field");
-            allFields.forEach((field => {
-                field.addEventListener("click", (() => {
-                    if (!field.classList.contains("field-active")) {
-                        field.classList.add("field-active");
-                        allFields.forEach((otherField => {
-                            if (otherField !== field) otherField.classList.remove("field-active");
-                        }));
-                    } else field.classList.remove("field-active");
-                }));
+        window.innerWidth;
+        const allFields = document.querySelectorAll(".field");
+        allFields.forEach((field => {
+            field.addEventListener("click", (() => {
+                if (!field.classList.contains("field-active")) {
+                    field.classList.add("field-active");
+                    allFields.forEach((otherField => {
+                        if (otherField !== field) otherField.classList.remove("field-active");
+                    }));
+                } else field.classList.remove("field-active");
             }));
-            const allPopups = document.querySelectorAll(".popup-desktop");
-            allPopups.forEach((popup => {
-                popup.addEventListener("click", (event => {
-                    event.stopPropagation();
-                }));
+        }));
+        const allPopups = document.querySelectorAll(".popup-desktop");
+        allPopups.forEach((popup => {
+            popup.addEventListener("click", (event => {
+                event.stopPropagation();
             }));
-        }
+        }));
         if (document.getElementById("date")) {
             new index_es("#date", {
                 range: true,
