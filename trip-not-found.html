@@ -723,246 +723,168 @@
 			</div>
 		</header>
 
-		<main class="page page-transfer">
-			<div class="page__navigation">
-				<div class="page__container">
-					<nav class="page__breadcrumbs breadcrumbs">
-						<div class="breadcrumbs__list">
-							<a href="hotel-page.html" class="breadcrumbs__item breadcrumbs-stay breadcrumbs__item--active">
-								<p class="breadcrumbs__text _icon-stay">Stay</p>
-							</a>
-							<a href="flight.html" class="breadcrumbs__item breadcrumbs-flight breadcrumbs__item--active">
-								<p class="breadcrumbs__text _icon-flights">Flight</p>
-
-
-							</a>
-							<div class="breadcrumbs__item breadcrumbs-transfer">
-								<p class="breadcrumbs__text _icon-transfer">Transfer</p>
-
-
-							</div>
-							<div class="breadcrumbs__item breadcrumbs-pass breadcrumbs__item--inactive">
-								<p class="breadcrumbs__text _icon-pass">Ski pass</p>
-
-							</div>
-
-						</div>
-					</nav>
-				</div>
-			</div>
-			<section class="transfer-main">
-				<div class="transfer-main__container">
-					<aside class="transfer-main__filters filters-trip">
-						<div data-spollers="991.98,max" class="filters-trip__items">
-							<details class="filters-trip__item trip-filter preference">
-								<summary class="trip-filter__text">Transfer preference</summary>
+		<main class="page page-trip">
+			<section class="trip-main">
+				<div class="trip-main__container">
+					<aside class="trip-main__filters filters-trip">
+						<div data-spollers="767.98,max" class="filters-trip__items">
+							<details class="filters-trip__item trip-filter accommodation">
+								<summary class="trip-filter__text">Accommodation type</summary>
 								<div class="trip-filter__items filter-items">
+									<div class="filter-items__item item-filter hotel">
+										<label class="item-filter__type">
+											<p>
+												Hotel
+											</p>
+											<input type="checkbox" name="stay" id="" class="real-checkbox">
+											<span class="custom-checkbox"></span>
+										</label>
+										<div class="item-filter__number">6</div>
+									</div>
+									<div class="filter-items__item item-filter chalet">
+										<label class="item-filter__type">
+											<p>
+												Chalet
+											</p>
+											<input type="checkbox" name="stay" id="" class="real-checkbox">
+											<span class="custom-checkbox"></span>
+										</label>
+										<div class="item-filter__number">3</div>
+									</div>
+								</div>
+							</details>
+							<details class="filters-trip__item trip-filter price">
+								<summary class="trip-filter__text">Price</summary>
+								<div class="trip-filter__items filter-items">
+									<div class="trip-filter__range range">
+										<div class="range__value">
+											<div id="price-start" class="range__price-start"></div>
+											-
+											<div id="price-end" class="range__price-end"></div>
+										</div>
+										<div class="range__line" id="price"></div>
+									</div>
+								</div>
+
+							</details>
+							<details class="filters-trip__item trip-filter popular">
+								<summary class="trip-filter__text">Popular filters</summary>
+								<div class="trip-filter__items filter-items">
+									<div class="filter-items__item item-filter hotel">
+										<label class="item-filter__type">
+											<p>
+												Hotel
+											</p>
+											<input type="checkbox" name="stay" id="" class="real-checkbox">
+											<span class="custom-checkbox"></span>
+										</label>
+										<div class="item-filter__number">6</div>
+									</div>
+									<div class="filter-items__item item-filter chalet">
+										<label class="item-filter__type">
+											<p>
+												Chalet
+											</p>
+											<input type="checkbox" name="stay" id="" class="real-checkbox">
+											<span class="custom-checkbox"></span>
+										</label>
+										<div class="item-filter__number">3</div>
+									</div>
+									<div class="filter-items__item item-filter france">
+										<label class="item-filter__type">
+											<p>
+												France
+											</p>
+											<input type="checkbox" name="stay" id="" class="real-checkbox">
+											<span class="custom-checkbox"></span>
+										</label>
+										<div class="item-filter__number">21</div>
+									</div>
 									<div class="filter-items__item item-filter breakfast">
 										<label class="item-filter__type">
 											<p>
-												Door to door
+												Breakfast included
 											</p>
 											<input type="checkbox" name="stay" id="" class="real-checkbox">
 											<span class="custom-checkbox"></span>
 										</label>
-										<div class="item-filter__number"></div>
+										<div class="item-filter__number">14</div>
 									</div>
-									<div class="filter-items__item item-filter breakfast-dinner">
+									<div class="filter-items__item item-filter ski">
 										<label class="item-filter__type">
 											<p>
-												Private - just for your group
+												Ski in / ski out
 											</p>
 											<input type="checkbox" name="stay" id="" class="real-checkbox">
 											<span class="custom-checkbox"></span>
 										</label>
-										<div class="item-filter__number"></div>
+										<div class="item-filter__number">9</div>
 									</div>
 									<div class="filter-items__item item-filter dinner">
 										<label class="item-filter__type">
 											<p>
-												Short waiting time
+												Dinner included
 											</p>
 											<input type="checkbox" name="stay" id="" class="real-checkbox">
 											<span class="custom-checkbox"></span>
 										</label>
-										<div class="item-filter__number"></div>
+										<div class="item-filter__number">7</div>
+									</div>
+								</div>
+							</details>
+							<details class="filters-trip__item trip-filter meals">
+								<summary class="trip-filter__text">Meals filters</summary>
+								<div class="trip-filter__items filter-items">
+									<div class="filter-items__item item-filter breakfast">
+										<label class="item-filter__type">
+											<p>
+												Breakfast included
+											</p>
+											<input type="checkbox" name="stay" id="" class="real-checkbox">
+											<span class="custom-checkbox"></span>
+										</label>
+										<div class="item-filter__number">14</div>
+									</div>
+									<div class="filter-items__item item-filter breakfast-dinner">
+										<label class="item-filter__type">
+											<p>
+												Breakfast & dinner included
+											</p>
+											<input type="checkbox" name="stay" id="" class="real-checkbox">
+											<span class="custom-checkbox"></span>
+										</label>
+										<div class="item-filter__number">7</div>
+									</div>
+									<div class="filter-items__item item-filter dinner">
+										<label class="item-filter__type">
+											<p>
+												Dinner included
+											</p>
+											<input type="checkbox" name="stay" id="" class="real-checkbox">
+											<span class="custom-checkbox"></span>
+										</label>
+										<div class="item-filter__number">7</div>
 									</div>
 								</div>
 							</details>
 						</div>
 					</aside>
-					<div class="transfer-main__body body-transfer-main">
-						<div class="body-transfer-main__header">
-							<h1 class="body-flight-main__title title">Choose your transfer</h1>
-							<!-- <button class="header-trip-main__sort"><span>By price</span></button> -->
-						</div>
-						<div class="body-transfer-main__content">
-							<div class="body-transfer-main__items">
-								<div class="body-transfer-main__item item-transfer">
-									<div class="item-transfer__image">
-										<picture><source srcset="img/transfer/01.webp" type="image/webp"><img class="ibg" src="img/transfer/01.jpg" alt="Image"></picture>
+					<div class="trip-main__body">
+
+						<div class="not-found">
+							<div class="not-found__container">
+								<div class="not-found__body">
+									<div class="not-found__icon">
+										<img class="ibg" src="img/icons/not-found.svg" alt="Icon">
 									</div>
-									<div class="item-transfer__body body-item-transfer">
-										<div class="body-item-transfer__header">
-											<p class="body-item-transfer__path">Heathrow Airport - SUV</p>
-											<h3 class="body-item-transfer__title title title--small">Mercedes-Benz E-Class <span>(or similar)</span></h3>
-											<p class="body-item-transfer__description">Experience an eco-friendly and cost-effective shared transfer. Stops may require brief waits.</p>
-										</div>
-										<div class="body-item-transfer__items">
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--person">
-												<img src="img/overview/icon_person.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">Up to 3</p>
-											</div>
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--baggage">
-												<img src="img/icons/baggage.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">1</p>
-											</div>
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--baggage">
-												<img src="img/icons/conditioning.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">Air Conditioning</p>
-											</div>
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--baggage">
-												<img src="img/icons/petrol.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">Full to full</p>
-											</div>
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--baggage">
-												<img src="img/icons/icon_check.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">Manual</p>
-											</div>
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--baggage">
-												<img src="img/icons/icon_check.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">Unlimited</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="body-transfer-main__item item-transfer">
-									<div class="item-transfer__image">
-										<picture><source srcset="img/transfer/01.webp" type="image/webp"><img class="ibg" src="img/transfer/01.jpg" alt="Image"></picture>
-									</div>
-									<div class="item-transfer__body body-item-transfer">
-										<div class="body-item-transfer__header">
-											<p class="body-item-transfer__path">Heathrow Airport - SUV</p>
-											<h3 class="body-item-transfer__title title title--small">Mercedes-Benz E-Class <span>(or similar)</span></h3>
-											<p class="body-item-transfer__description">Experience an eco-friendly and cost-effective shared transfer. Stops may require brief waits.</p>
-										</div>
-										<div class="body-item-transfer__items">
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--person">
-												<img src="img/overview/icon_person.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">Up to 3</p>
-											</div>
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--baggage">
-												<img src="img/icons/baggage.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">1</p>
-											</div>
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--baggage">
-												<img src="img/icons/conditioning.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">Air Conditioning</p>
-											</div>
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--baggage">
-												<img src="img/icons/petrol.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">Full to full</p>
-											</div>
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--baggage">
-												<img src="img/icons/icon_check.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">Manual</p>
-											</div>
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--baggage">
-												<img src="img/icons/icon_check.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">Unlimited</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="body-transfer-main__item item-transfer">
-									<div class="item-transfer__image">
-										<picture><source srcset="img/transfer/01.webp" type="image/webp"><img class="ibg" src="img/transfer/01.jpg" alt="Image"></picture>
-									</div>
-									<div class="item-transfer__body body-item-transfer">
-										<div class="body-item-transfer__header">
-											<p class="body-item-transfer__path">Heathrow Airport - SUV</p>
-											<h3 class="body-item-transfer__title title title--small">Mercedes-Benz E-Class <span>(or similar)</span></h3>
-											<p class="body-item-transfer__description">Experience an eco-friendly and cost-effective shared transfer. Stops may require brief waits.</p>
-										</div>
-										<div class="body-item-transfer__items">
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--person">
-												<img src="img/overview/icon_person.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">Up to 3</p>
-											</div>
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--baggage">
-												<img src="img/icons/baggage.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">1</p>
-											</div>
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--baggage">
-												<img src="img/icons/conditioning.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">Air Conditioning</p>
-											</div>
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--baggage">
-												<img src="img/icons/petrol.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">Full to full</p>
-											</div>
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--baggage">
-												<img src="img/icons/icon_check.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">Manual</p>
-											</div>
-											<div class="body-item-transfer__item item-body-item-transfer item-body-item-transfer--baggage">
-												<img src="img/icons/icon_check.svg" alt="Image" class="item-body-item-transfer__icon">
-												<p class="item-body-item-transfer__text">Unlimited</p>
-											</div>
-										</div>
+									<div class="not-found__content">
+										<h3 class="not-found__title title title--small">OH NO. Unfortunately we could not find a trip-bundle for your request</h3>
+										<p class="not-found__text">we suggest you change the dates and try the search again</p>
+										<a href="" class="not-found__button button button--main"><span>Find Another Trip</span></a>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div data-da=".body-popup-total-card,991.98" class="transfer-main__total-card total-card">
-						<div data-spollers class="total-card__items spollers">
-							<details class="total-card__item item-total-card spollers__item">
-								<summary class="item-total-card__title spollers__title">Accommodation</summary>
-								<div class="item-total-card__body body-item-total-card spollers__body">
-									<img src="img/icons/included/icon_stay.svg" alt="Image">
-									<div class="body-item-total-card__content">
-										<p class="body-item-total-card__text apartment">1 bedroom appartment for 4 people x1</p>
-										<p class="body-item-total-card__text included">Breakfast & dinner included</p>
-										<p class="body-item-total-card__text check">Check-in: 2:00 PM - 6:00 PM</p>
-									</div>
-								</div>
-							</details>
-							<details class="total-card__item item-total-card spollers__item">
-								<summary class="item-total-card__title spollers__title">Flights</summary>
-								<div class="item-total-card__body body-item-total-card spollers__body">
-									<div class="body-item-total-card__content">
-										<p class="body-item-total-card__text">1 bedroom appartment for 4 people x1</p>
-									</div>
-								</div>
-							</details>
-						</div>
-						<div class="total-card__footer">
-							<div class="total-card__price total-card-price">
-								<div class="price-accommodation__value">
-									<p>US$ <span>399</span></p>
-								</div>
-								<div class="price-accommodation__info">
-									<p>per one people</p>
-								</div>
-							</div>
-							<div class="include-content__items items-include">
-								<div class="items-include__item">
-									<img src="img/icons/included/icon_flights.svg" alt="Icon">
-								</div>
-								<div class="items-include__item">
-									<img src="img/icons/included/icon_transfer.svg" alt="Icon">
-								</div>
-								<div class="items-include__item">
-									<img src="img/icons/included/icon_skipass.svg" alt="Icon">
-								</div>
-							</div>
-						</div>
-						<a href="" class="total-card-accommodation__continue button button--fw button--main"><span>Continue</span></a>
-					</div>
-					<div class="total-card-mobile">
-						<a href="#" class="total-card-accommodation__continue button button--fw button--main"><span>Continue</span></a>
-						<a href="#" data-popup="#popup-total-card" class="total-card-mobile__details button"><span>Details</span></a>
 					</div>
 				</div>
 
@@ -1326,15 +1248,6 @@
 
 		</div>
 
-	</div>
-	<div id="popup-total-card" aria-hidden="true" class="popup-total-card popup-total-card-summary popup">
-		<div class="popup-total-card__wrapper popup__wrapper">
-			<div class="popup-total-card__content popup__content">
-				<div class="popup-total-card__body body-popup-total-card">
-
-				</div>
-			</div>
-		</div>
 	</div>
 
 	<script src="js/app.min.js?_v=20240330164938"></script>

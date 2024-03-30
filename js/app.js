@@ -1885,8 +1885,11 @@
             }
         }
         function menuInit() {
-            if (document.querySelector(".menu__icon-wrapper")) document.addEventListener("click", (function(e) {
-                if (bodyLockStatus && e.target.closest(".menu__icon-wrapper")) {
+            if (document.querySelector(".icon-menu")) document.addEventListener("click", (function(e) {
+                if (bodyLockStatus && e.target.closest(".icon-menu")) {
+                    bodyLockToggle();
+                    document.documentElement.classList.toggle("menu-open");
+                } else if (document.documentElement.classList.contains("menu-open") && bodyLockStatus && !e.target.closest(".menu__body")) {
                     bodyLockToggle();
                     document.documentElement.classList.toggle("menu-open");
                 }
@@ -7435,7 +7438,7 @@
                 modules: [ Navigation, Pagination ],
                 observer: true,
                 observeParents: true,
-                slidesPerView: 1,
+                slidesPerView: "auto",
                 spaceBetween: 0,
                 speed: 800,
                 pagination: {

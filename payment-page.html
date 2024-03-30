@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240330164938">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<main class="page page-payment">
+			<section class="payment">
+				<div class="payment__container">
+					<div class="payment__body">
+						<div class="payment_header header-payment">
+							<div class="header-payment__body">
+								<a href="summary.html" class="header-payment__back"><span>Back to summary</span></a>
+								<h2 class="header-payment__title title">Payment page</h2>
+								<p class="header-payment__text _icon-info">To make a payment, you must fill out the members information</p>
+							</div>
+						</div>
+						<div class="payment__content">
+
+							<div data-spollers class="payment__items spollers">
+								<details class="payment__item item-payment spollers__item">
+									<summary class="item-payment__header header-item-payment spollers__title">
+										<div class="header-item-payment__body">
+											<div class="header-item-payment__content">
+												<p class="item-payment__name title title--small">Sarah Larson</p>
+												<div class="item-payment__status">
+													<p>Not paid yet</p>
+												</div>
+											</div>
+											<span class="header-item-payment__button"></span>
+										</div>
+										<!-- <div class="header-item-payment__price">
+                                                    <p class="header-item-payment__text">Trip Price</p>
+                                                    <div class="total-card__price total-card-price">
+                                                        <div class="price-accommodation__value"><p>US$ <span>399</span></p></div>
+                                                    </div>
+                                                </div> -->
+									</summary>
+									<div class="item-payment__body body-item-payment spollers__body">
+										<div class="body-item-payment__info info-body-item-payment">
+											<div class="info-body-item-payment__header header-body-item-payment">
+												<p class="header-body-item-payment__title">Personal info</p>
+												<p class="header-body-item-payment__text"></p>
+											</div>
+											<div class="info-body-item-payment__content content-body-item-payment">
+												<input autocomplete="off" type="text" name="form[]" placeholder="Name*" class="info-body-item-payment__input input">
+												<input autocomplete="off" type="email" name="form[]" placeholder="Email*" class="info-body-item-payment__input input">
+											</div>
+										</div>
+										<div class="body-item-payment__luggage luggage-body-item-payment">
+											<div class="luggage-body-item-payment__header header-body-item-payment">
+												<p class="header-body-item-payment__title">Flight luggage</p>
+												<p class="header-body-item-payment__info _icon-info">Your booking includes one under-seat bag. Maximum size 45 x 36 x 20 cm</p>
+											</div>
+											<div class="luggage-body-item-payment__content content-body-item-payment">
+												<div class="form-group">
+													<label>
+														<div class="form-group__body">
+															<div class="form-group__name">
+																<input type="radio" name="luggage" id="" class="real-radio">
+																<span class="custom-radio"></span>
+																<p>
+																	One hold bag
+																</p>
+															</div>
+															<p class="form-group__text">Maximum 23 kg</p>
+															<p class="form-group__price">+€82</p>
+
+														</div>
+													</label>
+												</div>
+												<div class="form-group">
+													<label>
+														<div class="form-group__body">
+															<div class="form-group__name">
+																<input type="radio" name="luggage" id="" class="real-radio">
+																<span class="custom-radio"></span>
+																<p>No hold bags</p>
+															</div>
+															<p class="form-group__text">Adding luggage later might be more expensive</p>
+															<p class="form-group__price">No extra charge</p>
+
+														</div>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="body-item-payment__pass pass-body-item-payment">
+											<div class="pass-body-item-payment__header header-body-item-payment">
+												<p class="header-body-item-payment__title">Ski pass</p>
+											</div>
+											<div class="pass-body-item-payment__content content-body-item-payment">
+												<div class="form-group">
+													<label>
+														<div class="form-group__body">
+															<div class="form-group__name">
+																<input type="radio" name="pass" id="" class="real-radio">
+																<span class="custom-radio"></span>
+																<p>No ski pass</p>
+															</div>
+															<p class="form-group__text">If you're not going to ski</p>
+															<p class="form-group__price">No extra charge</p>
+
+														</div>
+													</label>
+												</div>
+												<div class="form-group">
+													<label>
+														<div class="form-group__body">
+															<div class="form-group__name">
+																<input type="radio" name="pass" id="" class="real-radio">
+																<span class="custom-radio"></span>
+																<p>Alpe d'huez grand domaine</p>
+															</div>
+															<p class="form-group__text">249 km of runs</p>
+															<p class="form-group__price">+€265</p>
+
+														</div>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="body-item-payment__equipment equipment-body-item-payment">
+											<div class="equipment-body-item-payment__header header-body-item-payment">
+												<p class="header-body-item-payment__title">Ski / Snowboard equipment</p>
+											</div>
+											<div class="equipment-body-item-payment__content content-body-item-payment">
+												<div class="form-group">
+													<label>
+														<div class="form-group__body">
+															<div class="form-group__name">
+																<input type="radio" name="equipment" id="" class="real-radio">
+																<span class="custom-radio"></span>
+																<p>Bring my own gear</p>
+															</div>
+															<p class="form-group__text">Add a ski bag for your flight</p>
+															<p class="form-group__price">+€82</p>
+
+														</div>
+													</label>
+												</div>
+												<div class="form-group">
+													<label data-popup="#popup-rent">
+														<div class="form-group__body">
+															<div class="form-group__name">
+																<input type="radio" name="equipment" id="" class="real-radio">
+																<span class="custom-radio"></span>
+																<p>Rent equipment</p>
+															</div>
+															<p class="form-group__text">Hire ski / snowboard gear</p>
+															<p class="form-group__price">From €58</p>
+
+														</div>
+													</label>
+												</div>
+												<div class="form-group">
+													<label>
+														<div class="form-group__body">
+															<div class="form-group__name">
+																<input type="radio" name="equipment" id="" class="real-radio">
+																<span class="custom-radio"></span>
+																<p>No equipment</p>
+															</div>
+															<p class="form-group__text">If you're not going to ski</p>
+															<p class="form-group__price">No extra charge</p>
+
+														</div>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="body-item-payment__level level-body-item-payment">
+											<div class="level-body-item-payment__header header-body-item-payment">
+												<p class="header-body-item-payment__title">Pick your level</p>
+											</div>
+											<div class="level-body-item-payment__content content-body-item-payment">
+												<div class="form-group">
+													<label>
+														<div class="form-group__body">
+															<div class="form-group__name">
+																<input type="radio" name="level" id="" class="real-radio">
+																<span class="custom-radio"></span>
+																<p>Novice</p>
+															</div>
+
+														</div>
+													</label>
+												</div>
+												<div class="form-group">
+													<label>
+														<div class="form-group__body">
+															<div class="form-group__name">
+																<input type="radio" name="level" id="" class="real-radio">
+																<span class="custom-radio"></span>
+																<p>Intermediate</p>
+															</div>
+
+														</div>
+													</label>
+												</div>
+												<div class="form-group">
+													<label>
+														<div class="form-group__body">
+															<div class="form-group__name">
+																<input type="radio" name="level" id="" class="real-radio">
+																<span class="custom-radio"></span>
+																<p>Expert</p>
+															</div>
+
+														</div>
+													</label>
+												</div>
+												<div class="form-group">
+													<label>
+														<div class="form-group__body">
+															<div class="form-group__name">
+																<input type="radio" name="level" id="" class="real-radio">
+																<span class="custom-radio"></span>
+																<p>All-level</p>
+															</div>
+
+														</div>
+													</label>
+												</div>
+
+											</div>
+										</div>
+										<div class="body-item-payment__footer footer-body-item-payment">
+											<div class="footer-body-item-payment__price">
+												<p class="footer-body-item-payment__text">Trip Price</p>
+												<div class="total-card__price total-card-price">
+													<div class="price-accommodation__value">
+														<p>US$ <span>399</span></p>
+													</div>
+												</div>
+											</div>
+											<button type="submit" class="footer-body-item-payment__button button button--main"><span>Save changes</span></button>
+										</div>
+									</div>
+								</details>
+
+							</div>
+
+						</div>
+					</div>
+					<div data-da=".body-popup-total-card,991.98" class="summary-main__total-card total-card">
+						<div class="total-card__pay pay-total-card">
+							<div class="pay-total-card__header">
+								<p class="pay-total-card__text">Select the members to pay</p>
+								<div class="pay-total-card__actions">
+									<p class="pay-total-card__selected">Members selected: <span>0</span></p>
+									<button class="pay-total-card__select-all pay-total-card__select-all--inactive"><span>Select all</span></button>
+								</div>
+							</div>
+							<div class="pay-total-card__members">
+								<div class="pay-total-card__member">
+									<label class="pay-total-card__block pay-total-card__block--inactive">
+										<input type="checkbox" name="member-pay" id="" class="real-checkbox">
+										<span class="custom-checkbox"></span>
+										<p>
+											Member №<span>1</span>
+										</p>
+									</label>
+									<a href="#" class="pay-total-card__manage"><span>Manage</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="total-card__price total-card-price">
+							<div class="price-accommodation__value">
+								<p>US$ <span>399</span></p>
+							</div>
+							<div class="price-accommodation__info">
+								<p>per one people</p>
+							</div>
+						</div>
+						<a href="" class="total-card-accommodation__continue button button--fw button--main"><span>Make payment</span></a>
+						<button data-close type="button" class="popup__close"><span>Close window</span></button>
+
+					</div>
+					<div class="total-card-mobile">
+						<a href="#" class="total-card-accommodation__continue button button--fw button--main"><span>Continue</span></a>
+						<a href="#" data-popup="#popup-total-card" class="total-card-mobile__details button"><span>Details</span></a>
+					</div>
+				</div>
+
+			</section>
+		</main>
+	</div>
+	<div id="popup-total-card" aria-hidden="true" class="popup-total-card popup-total-card-summary popup">
+		<div class="popup-total-card__wrapper popup__wrapper">
+			<div class="popup-total-card__content popup__content">
+				<div class="popup-total-card__body body-popup-total-card">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-rent" aria-hidden="true" class="popup-rent popup">
+		<div class="popup-rent__wrapper popup__wrapper">
+			<div class="popup-rent__content popup__content">
+				<div class="popup__navigation">
+					<p class="popup__title">Rent equipment</p>
+					<button data-close type="button" class="popup__close"></button>
+				</div>
+				<div class="popup-rent__body body-popup-rent popup__body">
+					<div class="body-popup-rent__info">
+						<p>
+							On arrival day, your equipment will be ready at 16:00 at the nearby Skiset shop, located <span>2.3</span> km from your stay.
+						</p>
+					</div>
+					<div class="body-popup-rent__items">
+						<div class="body-popup-rent__item item-rent">
+							<div class="item-rent__image">
+								<picture><source srcset="img/rent/gear.webp" type="image/webp"><img class="ibg" src="img/rent/gear.png" alt="Image"></picture>
+							</div>
+							<div class="item-rent__wrapper">
+								<div class="item-rent__header">
+									<h3 class="item-rent__title title title--small">Snowboard gear</h3>
+									<p class="item-rent__text">Can include board, helmet and boots.</p>
+								</div>
+								<div class="item-rent__body body-item-rent">
+									<div class="body-item-rent__content">
+										<p class="body-item-rent__text">Pick your set</p>
+										<div class="body-item-rent__field field">
+											<p class="field__text">Skis + Shoes + Helmet</p>
+
+											<div class="body-item-rent__popup popup-body-item-rent popup-desktop">
+												<div class="popup-body-item-rent__items">
+													<div class="popup-body-item-rent__item form-group">
+														<label>
+															<div class="form-group__body">
+																<div class="form-group__name">
+																	<p>Skis only</p>
+																	<input type="radio" name="rent-01" id="" class="real-radio">
+																	<span class="custom-radio"></span>
+																</div>
+															</div>
+														</label>
+													</div>
+													<div class="popup-body-item-rent__item form-group">
+														<label>
+															<div class="form-group__body">
+																<div class="form-group__name">
+																	<p>Skis + Shoes</p>
+																	<input type="radio" name="rent-01" id="" class="real-radio">
+																	<span class="custom-radio"></span>
+																</div>
+															</div>
+														</label>
+													</div>
+													<div class="popup-body-item-rent__item form-group">
+														<label>
+															<div class="form-group__body">
+																<div class="form-group__name">
+																	<p>Skis + Helmet</p>
+																	<input type="radio" name="rent-01" id="" class="real-radio">
+																	<span class="custom-radio"></span>
+																</div>
+															</div>
+														</label>
+													</div>
+													<div class="popup-body-item-rent__item form-group">
+														<label>
+															<div class="form-group__body">
+																<div class="form-group__name">
+																	<p>Skis + Shoes + Helmet</p>
+																	<input type="radio" name="rent-01" id="" class="real-radio">
+																	<span class="custom-radio"></span>
+																</div>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button class="body-item-rent__button button button--main"><span>Add equipment</span></button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<script src="js/app.min.js?_v=20240330164938"></script>
+
+</body>
+
+</html>
