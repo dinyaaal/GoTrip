@@ -4594,6 +4594,10 @@ body::after {
   gap: 0.875rem;
 }
 
+.description-accommodation-main__more {
+  margin-top: 0.875rem;
+}
+
 .description-accommodation-main__more span {
   font-weight: 500;
   display: -webkit-box;
