@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240330184624">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240401113703">
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -918,7 +918,7 @@
 												<div class="item-flight__route route-item-flight">
 													<p class="route-item-flight__time">4h 05m</p>
 													<span class="route-item-flight__line"></span>
-													<p class="route-item-flight__text">Nonstop</p>
+													<p data-popup="#popup-stops" class="route-item-flight__text stops"><span>3</span> Stops</p>
 												</div>
 												<div class="item-flight__time time-item-flight time-item-flight--arrival">
 													<span class="time-item-flight__value">14:00</span>
@@ -1854,6 +1854,18 @@
 		</div>
 
 	</div>
+	<div id="popup-stops" aria-hidden="true" class="popup-stops popup">
+		<div class="popup-stops__wrapper popup__wrapper">
+			<div class="popup-stops__content popup__content">
+				<div class="popup__navigation">
+					<button data-close type="button" class="popup__close"></button>
+				</div>
+				<div class="popup-stops__body popup__body">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla magnam reprehenderit aspernatur consequatur, accusantium porro, odio cum unde voluptatum aliquid distinctio amet reiciendis architecto ea ex, molestias ab maiores sed?</p>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div id="popup-total-card" aria-hidden="true" class="popup-total-card popup-total-card-summary popup">
 		<div class="popup-total-card__wrapper popup__wrapper">
 			<div class="popup-total-card__content popup__content">
@@ -1864,7 +1876,7 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20240330184624"></script>
+	<script src="js/app.min.js?_v=20240401113703"></script>
 
 </body>
 

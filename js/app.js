@@ -9346,18 +9346,40 @@ PERFORMANCE OF THIS SOFTWARE.
         const index_es = air_datepicker_default();
         const menuLinks = document.querySelectorAll(".menu__link");
         menuLinks.forEach((menuLink => {
-            menuLink.addEventListener("click", (function() {
+            menuLink.addEventListener("click", (function(event) {
+                event.stopPropagation();
                 document.querySelectorAll(".menu__sub-menu-open").forEach((menu => {
-                    if (menu !== this.parentElement) menu.classList.remove("menu__sub-menu-open");
+                    if (menu !== this.parentElement) {
+                        menu.classList.remove("show");
+                        menu.classList.remove("menu__sub-menu-open");
+                    }
                 }));
                 const subMenu = this.parentElement;
                 subMenu.classList.toggle("menu__sub-menu-open");
+                setTimeout((() => {
+                    subMenu.classList.toggle("show");
+                }), 200);
             }));
         }));
-        window.innerWidth;
+        document.addEventListener("click", (function(event) {
+            if (!event.target.closest(".menu")) document.querySelectorAll(".menu__sub-menu-open").forEach((menu => {
+                menu.classList.remove("show");
+                setTimeout((() => {
+                    menu.classList.remove("menu__sub-menu-open");
+                }), 200);
+            }));
+        }));
         const allFields = document.querySelectorAll(".field");
+        document.addEventListener("click", (event => {
+            const isField = event.target.closest(".field");
+            const isPopupDesktop = event.target.closest(".popup-desktop");
+            if (!isField && !isPopupDesktop) allFields.forEach((field => {
+                field.classList.remove("field-active");
+            }));
+        }));
         allFields.forEach((field => {
-            field.addEventListener("click", (() => {
+            field.addEventListener("click", (event => {
+                event.stopPropagation();
                 if (!field.classList.contains("field-active")) {
                     field.classList.add("field-active");
                     allFields.forEach((otherField => {

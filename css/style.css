@@ -1354,6 +1354,7 @@ body::after {
 .popup__close {
   width: 1.25rem;
   height: 1rem;
+  margin: 0 0 0 auto;
   position: relative;
 }
 
@@ -3202,29 +3203,29 @@ body::after {
 }
 
 .menu__sub-list {
-  margin-top: 1.25rem;
-  padding: 0.625rem;
+  padding: 0.625rem 0;
   display: none;
+  opacity: 0;
   position: relative;
   border-radius: 0.875rem;
   background-color: #fff;
   overflow: hidden;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  min-width: 100px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .menu__sub-link {
   width: 100%;
   background-color: #ffffff;
+  padding: 0.3125rem 0rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  padding: 0.3125rem 0.9375rem;
   color: #030612;
   line-height: 1.4;
 }
 
 .menu__sub-menu-open .menu__sub-list {
-  opacity: 1;
   display: block;
 }
 
@@ -3233,6 +3234,10 @@ body::after {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.show .menu__sub-list {
+  opacity: 1;
 }
 
 .actions-main-header {
@@ -3984,7 +3989,6 @@ body::after {
 }
 
 .item-accommodation__slider {
-  margin: 0 auto;
   width: 100%;
   max-height: 15.75rem;
   border-radius: 1.5rem 1.5rem 0 0;
@@ -4269,16 +4273,6 @@ body::after {
   margin-bottom: 3rem;
 }
 
-.accommodation-main__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 1.25rem;
-}
-
 .header-accommodation__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4346,6 +4340,16 @@ body::after {
 
 .item-header-accommodation--green .item-header-accommodation__text {
   color: #097327;
+}
+
+.body-accommodation-main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.25rem;
 }
 
 .gallery-accommodation__slider {
@@ -4720,6 +4724,7 @@ body::after {
 }
 
 .item-rooms {
+  cursor: pointer;
   width: 100%;
   border-radius: 1.5rem;
   overflow: hidden;
@@ -5165,6 +5170,10 @@ body::after {
   margin-bottom: 0.625rem;
 }
 
+.popup-room {
+  line-height: 140%;
+}
+
 .popup-room__content .popup__name {
   font-weight: 500;
   font-size: 18px;
@@ -5269,6 +5278,10 @@ body::after {
   gap: 0.875rem;
 }
 
+.header-trip-main__sort {
+  text-wrap: nowrap;
+}
+
 .item-flight {
   cursor: pointer;
   line-height: 140%;
@@ -5363,6 +5376,27 @@ body::after {
 
 .route-item-flight__text {
   margin: 0 auto;
+}
+
+.route-item-flight__text.stops {
+  color: #030612;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.25rem;
+}
+
+.route-item-flight__text.stops::after {
+  content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1.125rem;
+          flex: 0 0 1.125rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  background: url("../img/icons/info.svg") center no-repeat;
 }
 
 .block-item-flight {
@@ -5701,7 +5735,7 @@ body::after {
 }
 
 .summary-main__total-card {
-  max-width: 25rem;
+  max-width: 25rem !important;
 }
 
 .header-summary-main {
@@ -8395,6 +8429,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .menu__sub-list {
+    margin-top: 1.25rem;
     position: absolute;
     top: 20px;
     left: 50%;
@@ -8402,6 +8437,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     text-align: center;
+  }
+
+  .menu__sub-link {
+    padding: 0.3125rem 0.625rem;
   }
 
   .header__footer .header-footer__body {
@@ -8929,6 +8968,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             flex-direction: row-reverse;
   }
 
+  .header-accommodation__rating .rating-accommodation__reviews {
+    margin-top: 3px;
+  }
+
   .header-accommodation__rating .rating-accommodation__overall-rating {
     display: none;
   }
@@ -8937,6 +8980,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     height: 1.375rem;
     padding: 0.0625rem 0.625rem;
     font-size: 0.875rem;
+  }
+
+  .header-accommodation__rating .rating-accommodation__value p {
+    margin-top: 0.1875rem;
   }
 
   .total-card-accommodation {
@@ -9500,6 +9547,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .menu__sub-link:hover {
+    color: #fff;
     background-color: #5552FF;
   }
 
