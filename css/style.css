@@ -2681,7 +2681,6 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0.625rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2691,30 +2690,9 @@ body::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-  max-width: 5.625rem;
-  height: 3.125rem;
-  width: 100%;
-  padding: 0.3125rem;
-  border-radius: 0.875rem;
-  border: 1px solid #030612;
-  position: relative;
-}
-
-.breadcrumbs__item--inactive {
-  border: 1px solid #818389;
-  color: #818389;
-}
-
-.breadcrumbs__item--active {
-  border: 1px solid #097327;
-  color: #097327;
 }
 
 .breadcrumbs__text {
@@ -2731,6 +2709,49 @@ body::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.item-breadcrumbs:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.item-breadcrumbs--inactive .item-breadcrumbs__body {
+  border: 1px solid #E6E4EF;
+  color: #818389;
+}
+
+.item-breadcrumbs--active .item-breadcrumbs__body {
+  border: 1px solid #097327;
+  color: #097327;
+}
+
+.item-breadcrumbs--active:not(:last-child) .item-breadcrumbs__line {
+  background-color: #097327;
+}
+
+.item-breadcrumbs__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 3.125rem;
+  width: 100%;
+  width: 5.625rem;
+  padding: 0.3125rem;
+  border-radius: 0.875rem;
+  border: 1px solid #030612;
+  position: relative;
 }
 
 .popup-total-card {
@@ -7924,6 +7945,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (min-width: 29.99875em) {
+  .item-breadcrumbs:not(:last-child) {
+    width: 100%;
+  }
+
+  .item-breadcrumbs:not(:last-child) .item-breadcrumbs__line {
+    height: 0.09375rem;
+    width: 100%;
+    background-color: #E6E4EF;
+  }
+
   .body-main {
     border-radius: 2.125rem;
   }
@@ -8293,7 +8324,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: 0.875rem;
   }
 
-  .breadcrumbs__item {
+  .item-breadcrumbs__body {
     font-size: 1rem;
   }
 
@@ -8690,7 +8721,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: 0.75rem;
   }
 
-  .breadcrumbs__item {
+  .item-breadcrumbs__body {
     font-size: 0.875rem;
   }
 
@@ -8931,6 +8962,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     height: 2.75rem;
   }
 
+  .item-breadcrumbs__body {
+    width: 4.375rem;
+  }
+
   .body-item-rent__button {
     width: 100%;
     max-width: none;
@@ -9010,6 +9045,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 29.99875em) {
+  .item-breadcrumbs__body {
+    width: 4.0625rem;
+  }
+
   .item-rent__image {
     display: none;
   }
@@ -9117,13 +9156,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @supports (font-size: clamp( 0.875rem , 0.837962963rem  +  0.1851851852vw , 1rem )) {
-    .breadcrumbs__item {
+    .item-breadcrumbs__body {
       font-size: clamp( 0.875rem , 0.837962963rem  +  0.1851851852vw , 1rem );
     }
 }
 
 @supports not (font-size: clamp( 0.875rem , 0.837962963rem  +  0.1851851852vw , 1rem )) {
-    .breadcrumbs__item {
+    .item-breadcrumbs__body {
       font-size: calc(0.875rem + 0.125 * (100vw - 20rem) / 67.5);
     }
 }
@@ -9575,6 +9614,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     outline: 1px solid #4845DD;
     -webkit-box-shadow: 0 4px 14px rgba(72, 69, 221, 0.15);
             box-shadow: 0 4px 14px rgba(72, 69, 221, 0.15);
+  }
+
+  .selected .button--main:hover {
+    color: #4845DD;
+    background-color: rgba(72, 69, 221, 0.15);
   }
 
   .item-flight:hover {
