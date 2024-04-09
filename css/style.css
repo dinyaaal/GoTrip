@@ -2471,8 +2471,6 @@ body::after {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.5rem;
-  padding-bottom: 1.125rem;
-  border-bottom: 1px solid #E4E3FA;
 }
 
 .total-card__room::before {
@@ -4416,6 +4414,8 @@ body::after {
 }
 
 .page-hotel .total-card__price {
+  padding-top: 1rem;
+  border-top: 1px solid #E4E3FA;
   padding-bottom: 1rem;
   border-bottom: 1px solid #E4E3FA;
 }
